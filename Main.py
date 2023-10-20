@@ -1,26 +1,58 @@
 import tkinter as tk
+from tkinter.scrolledtext import ScrolledText
+import pickle
 from spelling_test import spelling_test as sp
 
-
-vocabulary = []
-with open('example_vocabulary') as f:
-    for line in f.readlines():
-        vocabulary.append(line.split())
-
+def print_decisions():
+    for decision in vocabulary_choices.keys():
+        print(decision, ":" , vocabulary_choices[decision].get())
 
 def start_spelltest():
-    # without this interface the window is just opened without button action
+    vocabulary = []
+    for decision in vocabulary_choices.keys():
+        if vocabulary_choices[decision].get():
+            for item in unserialized_data[decision][0:]:
+                vocabulary.append([item[1], item[0]])
     sp(var1,sWindow,vocabulary,bg_grey)
 
 
-sWindow=tk.Tk()
+sWindow = tk.Tk()
 bg_grey = sWindow.cget('bg')
-sWindow.title("Hindi Spelling Trainer")
+sWindow.title("Setup Menu - Spelling Trainer")
+
+text = ScrolledText(sWindow, width=20, height=10)
+text.grid(row=1,column=0)
+
+# Load data (deserialize)
+with open('vocabulary.pkl', 'rb') as handle:
+    unserialized_data = pickle.load(handle)
+
+#print(unserialized_data)
+
+vocabulary_choices = {}
+
+#for zet in unserialized_data.values():
+#    for item in zet:
+#        for child in item:
+#            print(child)
+
+for category in unserialized_data.keys():
+    vocabulary_choices[category] = tk.BooleanVar()
+    cb = tk.Checkbutton(text, text=category, bg='white', anchor='w', variable=vocabulary_choices[category])
+    text.window_create('end', window=cb)
+    text.insert('end', '\n')
+
+
+
+a = tk.Button(text="Check Decisions",command = print_decisions) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
+a.grid(row=0,column=0)
+
+b = tk.Button(text="Start Spelling Training",command = start_spelltest) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
+b.grid(row=2,column=0)
 
 var1= tk.BooleanVar()
-tk.Checkbutton(sWindow, text="randomize", variable=var1).grid(row=0,column=0)
+var1.set(False)
+tk.Checkbutton(sWindow, text="randomize", variable=var1).grid(row=3,column=0)
 
-a = tk.Button(text="Click This",command = start_spelltest) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
-a.grid(row=0,column=1)
 
-sWindow.mainloop() #for infinite loop of main window
+sWindow.mainloop()

@@ -36,5 +36,4 @@ def select(value,state, k, vocab, vocabulary, nright, nwrong,  l2, mWindow, bg_g
             state = True
     else:
         l2.insert(length,value)
-    print(value, state)
     return state, nright, nwrong, vocab, k
