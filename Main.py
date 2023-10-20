@@ -27,15 +27,8 @@ text.grid(row=1,column=0)
 with open('vocabulary.pkl', 'rb') as handle:
     unserialized_data = pickle.load(handle)
 
-#print(unserialized_data)
 
 vocabulary_choices = {}
-
-#for zet in unserialized_data.values():
-#    for item in zet:
-#        for child in item:
-#            print(child)
-
 for category in unserialized_data.keys():
     vocabulary_choices[category] = tk.BooleanVar()
     cb = tk.Checkbutton(text, text=category, bg='white', anchor='w', variable=vocabulary_choices[category])
