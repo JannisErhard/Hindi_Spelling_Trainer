@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
 from spelling_test import spelling_test as sp
 
 
