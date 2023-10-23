@@ -28,12 +28,12 @@ def spelling_test(var1,sWindow,vocabulary,bg_grey):
     vocab = vocabulary[k]
     tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13)
     tk.Label(mWindow,text=f"Translate \"{vocab[0]}\"",bg=bg_grey,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13)
-    l2=tk.Entry(mWindow,bg='black',fg='white',relief='raised', font=('Times', 24))
-    l2.grid(row=1,column=0,columnspan=13,pady=10)
+    l2=tk.Entry(mWindow,width=35,bg='black',fg='white',relief='raised',selectborderwidth=5, font=('Times', 24))
+    l2.grid(row=1,column=0,columnspan=13,sticky="ns")
     tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
     tk.Label(mWindow,text='??????????',bg=bg_grey,fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
     tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
     tk.Label(mWindow,text=f'right = {nright}, wrong = {nwrong}; '+grade(1.0),bg=bg_grey,fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
     for i,row in enumerate(buttons):
         for j,key in enumerate(row):
-            tk.Button(mWindow,text=key,width=6,height=2,relief='raised',command=lambda x=key:press(x),bd=6).grid(row=i+4,column=j)
+            tk.Button(mWindow,text=key,font=('Times', 24),width=6,height=2,relief='raised',command=lambda x=key:press(x),bd=6).grid(row=i+4,column=j)

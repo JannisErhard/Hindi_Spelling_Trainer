@@ -31,7 +31,7 @@ with open('vocabulary.pkl', 'rb') as handle:
 vocabulary_choices = {}
 for category in unserialized_data.keys():
     vocabulary_choices[category] = tk.BooleanVar()
-    cb = tk.Checkbutton(text, text=category, bg='white', anchor='w', variable=vocabulary_choices[category])
+    cb = tk.Checkbutton(text, text=category, bg='white', anchor='w', cursor='arrow',variable=vocabulary_choices[category])
     text.window_create('end', window=cb)
     text.insert('end', '\n')
 
