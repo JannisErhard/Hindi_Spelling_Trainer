@@ -26,8 +26,8 @@ def spelling_test(var1,sWindow,vocabulary,bg_grey):
     mWindow=tk.Tk() 
     mWindow.title("Hindi Spelling Trainer")
     vocab = vocabulary[k]
-    tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13)
-    tk.Label(mWindow,text=f"Translate \"{vocab[0]}\"",bg=bg_grey,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13)
+    tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13,sticky="NEWS")
+    tk.Label(mWindow,text=f"Translate \"{vocab[0]}\"",bg=bg_grey,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13,sticky="NEWS")
     l2=tk.Entry(mWindow,width=35,bg='black',fg='white',relief='raised',selectborderwidth=5, font=('Times', 24))
     l2.grid(row=1,column=0,columnspan=13,sticky="ns")
     tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
@@ -37,3 +37,7 @@ def spelling_test(var1,sWindow,vocabulary,bg_grey):
     for i,row in enumerate(buttons):
         for j,key in enumerate(row):
             tk.Button(mWindow,text=key,font=('Times', 24),width=6,height=2,relief='raised',command=lambda x=key:press(x),bd=6).grid(row=i+4,column=j)
+    mWindow.grid_rowconfigure(0,weight=1)
+    mWindow.grid_rowconfigure(1,weight=1)
+    mWindow.grid_rowconfigure(2,weight=1)
+
