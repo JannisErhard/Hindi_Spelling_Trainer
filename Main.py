@@ -48,21 +48,20 @@ for category in unserialized_data.keys():
 a = tk.Button(text="Check Decisions",command = print_decisions) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
 a.grid(row=0,column=0)
 
-b = tk.Button(text="Translate English to Hindi",command = start_spelltest) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
-b.grid(row=2,column=0)
+button_start_english_to_hindi = tk.Button(text="Translate English to Hindi",command = start_spelltest) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
+button_start_english_to_hindi.grid(row=2,column=0,sticky="")
 
-c = tk.Button(text="Translate Hindi to English",command = start_spelltest_p) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
-c.grid(row=3,column=0,sticky="NEWS")
+button_start_hindi_to_english = tk.Button(text="Translate Hindi to English",command = start_spelltest_p) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
+button_start_hindi_to_english.grid(row=2,column=1,sticky="")
 
 var1= tk.BooleanVar()
 var1.set(False)
-tk.Checkbutton(sWindow, text="randomize", variable=var1).grid(row=4,column=0,sticky='NEWS')
+tk.Checkbutton(sWindow, text="randomize", variable=var1).grid(row=3,column=0,sticky='N')
 
 sWindow.grid_columnconfigure(0,weight=1)
 sWindow.grid_rowconfigure(0,weight=1)
 sWindow.grid_rowconfigure(1,weight=1)
 sWindow.grid_rowconfigure(2,weight=1)
 sWindow.grid_rowconfigure(3,weight=1)
-sWindow.grid_rowconfigure(4,weight=1)
 
 sWindow.mainloop()
