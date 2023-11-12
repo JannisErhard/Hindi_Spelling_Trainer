@@ -1,4 +1,4 @@
-import tkinter as tk
+import customtkinter as tk
 from tkinter.scrolledtext import ScrolledText
 import pickle
 from spelling_test import spelling_test as sp
