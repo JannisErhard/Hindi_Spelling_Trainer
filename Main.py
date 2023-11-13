@@ -1,4 +1,4 @@
-import customtkinter as tk
+import tkinter as tk
 from tkinter.scrolledtext import ScrolledText
 import pickle
 from spelling_test import spelling_test as sp
@@ -42,6 +42,7 @@ text.grid(row=1,columnspan=2,sticky="NESW")
 # Load data (deserialize)
 with open('vocabulary.pkl', 'rb') as handle:
     unserialized_data = pickle.load(handle)
+    unserialized_data = dict(sorted(unserialized_data.items()))
 
 
 cbs = []
