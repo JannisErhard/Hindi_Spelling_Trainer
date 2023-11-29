@@ -1,4 +1,5 @@
 import tkinter as tk
+import customtkinter as ctk
 from tkinter.scrolledtext import ScrolledText
 import pickle
 from spelling_test import spelling_test as sp
@@ -32,7 +33,7 @@ def start_spelltest_p():
     sp(var1,sWindow,vocabulary,bg_grey)
 
 
-sWindow = tk.Tk()
+sWindow = ctk.CTk()
 bg_grey = sWindow.cget('bg')
 sWindow.title("Setup Menu - Hindi Language Trainer")
 

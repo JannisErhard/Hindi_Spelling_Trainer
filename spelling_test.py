@@ -1,12 +1,13 @@
 import random 
 import tkinter as tk
+import customtkinter as Ctk
 from us_grades import grade
 from button_file import buttons
 from key_functions import select
 
 global state, k,  nright, nwrong
 state = True
-k, nright, nwrong = 0, 0 , 0
+k, nright, nwrong = 0, 0, 0
 
 
 
@@ -26,8 +27,8 @@ def spelling_test(var1,sWindow,vocabulary,bg_grey):
     mWindow=tk.Tk() 
     mWindow.title("Hindi Spelling Trainer")
     vocab = vocabulary[k]
-    tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13,sticky="NEWS")
-    tk.Label(mWindow,text=f"Translate \"{vocab[0]}\"",bg=bg_grey,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13,sticky="NEWS")
+    tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='green', font=('Times', 24), height=2).grid(row=0,column=0,columnspan=13,sticky="NEWS")
+    tk.Label(mWindow,text=f"Translate \"{vocab[0]}\"",bg=bg_grey,fg='green', font=('Times', 24), height=2).grid(row=0,column=0,columnspan=13,sticky="NEWS")
     l2=tk.Entry(mWindow,width=35,bg='black',fg='white',relief='raised',selectborderwidth=5, font=('Times', 24))
     l2.grid(row=1,column=0,columnspan=13,sticky="ns")
     tk.Label(mWindow,text=' '*80,bg=bg_grey,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
