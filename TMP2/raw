@@ -1,0 +1,484 @@
+\subsubsection{Adpositions}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi}से \end{hindi} & from & se \\
+    \begin{hindi}में \end{hindi} & in,within,during & me \\
+    \begin{hindi}पर \end{hindi} & on,at & par \\
+    \begin{hindi}का \end{hindi} & "'s" & ka \\
+    \begin{hindi} पास \end{hindi} & nearby/belonging & pas \\
+
+    \end{tabular}
+    \caption{postpositions, ka indicates posession and can be related to the english " 's ". Pas indicates ownership and is in combinations with forms of to be translated as "has/have"}
+    \label{tab:postpositions}
+\end{table}
+
+\newpage 
+\subsubsection{Nouns}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi} खाना \end{hindi} & food & khanaa \\ \hline \hline
+
+        \begin{hindi} फल \end{hindi} & fruits & Fhal \\ \hline 
+        \begin{hindi} केला \end{hindi} & banana & kela \\
+        \begin{hindi} सेब \end{hindi} & apple & sehb \\
+        \begin{hindi} नींबू \end{hindi} & lemon & nimboo \\
+        \begin{hindi} संतर \end{hindi} & orange & santara \\
+        \begin{hindi} आम \end{hindi} & mango & aam \\ \hline
+
+        \begin{hindi} सब्ज़ी \end{hindi} & vegetable & sabzee \\ \hline 
+
+        \begin{hindi} टमाटर \end{hindi} & tomatoe & tamatar \\
+        \begin{hindi} आलू \end{hindi} & potatoe & alu \\
+        \begin{hindi} चावल \end{hindi} & rice & Chavaal \\
+        \begin{hindi} गाजर \end{hindi} & carrot & gajar \\ \hline 
+
+        \begin{hindi} अंडा \end{hindi} & egg & anda \\
+        \begin{hindi} मछली \end{hindi} & fish & manchalee \\  
+        \begin{hindi} पनीर \end{hindi} & cheese & paneer \\  
+        \begin{hindi} मक्खन \end{hindi} & butter & makhan \\  
+
+
+
+        \begin{hindi} पानी \end{hindi} & water & pani \\
+        \begin{hindi} चाय \end{hindi} & tea & chai \\
+        \begin{hindi} शराब \end{hindi} & alcohol & Sharaab \\
+
+    \end{tabular}
+    \caption{Food}
+    \label{tab:nons_food}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+\begin{hindi} दर्द \end{hindi} & pain & dard \\  
+\begin{hindi} बुखार \end{hindi} & fever & bukhar \\  
+\begin{hindi} दवाई \end{hindi} & medicine & davai \\ 
+    \end{tabular}
+    \caption{Illness}
+    \label{tab:nouns_illness}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+\begin{hindi} समय \end{hindi} & time & sahmeh \\  
+\begin{hindi} मिनट \end{hindi} & minute & minute \\  
+\begin{hindi} घंटा \end{hindi} & hour & ghanta \\ 
+\begin{hindi} शाम \end{hindi} & evening & sham \\ 
+\begin{hindi} दोपहर \end{hindi} & afternoon & dopeher \\ 
+\begin{hindi} सुबह \end{hindi} & morning & suhbah \\ 
+\begin{hindi} रात \end{hindi} & night & rhad \\ 
+    \end{tabular}
+    \caption{Time}
+    \label{tab:nouns_time}
+\end{table}
+
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+\begin{hindi} हाथ \end{hindi} & hand & hat \\ 
+\begin{hindi} पैर \end{hindi} & foot & pair \\ 
+\begin{hindi} नाक \end{hindi} & nose & nak \\ 
+\begin{hindi} कान \end{hindi} & ear & kan \\ 
+\begin{hindi} मुँह \end{hindi} & mouth & muhn \\ 
+\begin{hindi} बाल \end{hindi} & hair & bal \\ 
+\begin{hindi} सिर \end{hindi} & head & sir \\ 
+\begin{hindi} अँगूठा \end{hindi} & thumb & angootha \\ 
+\begin{hindi} अंगुली \end{hindi} & finger & angulee \\ 
+\begin{hindi} दिल \end{hindi} & heart & dil \\ 
+\begin{hindi} दाँत \end{hindi} & teeth & dant \\ 
+\begin{hindi} आँख \end{hindi} & eye & aankh \\  
+    \end{tabular}
+    \caption{Basic Anatomy}
+    \label{tab:nouns_anatomy}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi} बेटा \end{hindi} & son & beta \\
+        \begin{hindi} बेटी \end{hindi} & daughter & beti\\
+        \begin{hindi} भाई \end{hindi} & brother & bhai\\
+        \begin{hindi} बहन \end{hindi} & sister & behen\\
+        \begin{hindi} माँ \end{hindi} & mother & mah\\
+        \begin{hindi} पिता \end{hindi} & father & pitta\\
+        \begin{hindi} दादी \end{hindi} & grandmother & dadi ma\\
+        \begin{hindi} दादा \end{hindi} & grandfather & dada\\
+        \begin{hindi} परिवार \end{hindi} & family & parivar\\
+                \begin{hindi} बच्चा \end{hindi} & child & batscha \\
+
+    \end{tabular}
+    \caption{Family}
+    \label{tab:nouns_family}
+\end{table}
+
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi} लोग \end{hindi} & people & log \\
+        \begin{hindi} दोस्त \end{hindi} & friend & dhost\\
+        \begin{hindi} आदमी \end{hindi} & man & admee\\
+        \begin{hindi} औरत \end{hindi} & woman & aurat\\
+        \begin{hindi} लड़का \end{hindi} & boy & ladakaa\\
+        \begin{hindi} लड़की \end{hindi} & girl & ladakee\\
+    \end{tabular}
+    \caption{People}
+    \label{tab:nouns_people}
+\end{table}
+
+
+ \begin{table}[H]
+    \centering 
+    \begin{tabular}{c|c|c}
+        \begin{hindi} पक्षी \end{hindi} & bird & pepshi \\
+        \begin{hindi} कबूतर \end{hindi} & pidgeon & kabuter \\
+        \begin{hindi}  मोर \end{hindi} & peacock & mohr \\
+        \begin{hindi} बिल्ली \end{hindi} & cat & billi \\
+        \begin{hindi}  गाय \end{hindi} & cow & gai \\
+        \begin{hindi}  घोड़ा  \end{hindi} & horse& ghora  \\
+        \begin{hindi}  कुत्ता \end{hindi} & dog & kutta \\
+        \begin{hindi}  हाथी \end{hindi} & elephant & hathi \\
+        \begin{hindi}  चूहा \end{hindi} & mouse & chooha \\
+        \begin{hindi}  जानवर \end{hindi} & animal & dschahnvar \\
+    \end{tabular}
+    \caption{animals}
+    \label{tab:nouns_animals}
+\end{table}
+
+
+\begin{table}[H]
+    \centering 
+    \begin{tabular}{c|c|c}
+        \begin{hindi} स्कूल \end{hindi} & school & skul \\
+        \begin{hindi} घर \end{hindi} & home & Ghr \\
+        \begin{hindi} भारत \end{hindi} & indien & bharatt \\
+        \begin{hindi} सड़क \end{hindi} & road & saddak \\
+        \begin{hindi} नदी \end{hindi} & river & nadhee \\  
+        \begin{hindi} गाँव \end{hindi} & village & ghav \\  
+        \begin{hindi} शहर \end{hindi} & city & sheher \\  
+        \begin{hindi}   गली\end{hindi} & street & galee \\  
+   \begin{hindi}   जगह \end{hindi} & place & jagah \\  
+    \end{tabular}
+    \caption{places}
+    \label{tab:nouns_places}
+\end{table}
+
+\begin{table}[H]
+    \centering 
+    \begin{tabular}{c|c|c}
+        \begin{hindi} कुर्सी \end{hindi} & chair & kursi \\
+        \begin{hindi} मेज़ \end{hindi} & table & mehz \\
+        \begin{hindi} पैसा \end{hindi} & money & paisa \\
+        \begin{hindi} रुपया \end{hindi} & rupee & rupia \\
+        \begin{hindi} गाड़ी \end{hindi} & vehicle & gaadee \\
+
+        \begin{hindi} मकान \end{hindi} & house & makaan \\
+        \begin{hindi} दरवाज़ा \end{hindi} & door & darwaza \\
+        \begin{hindi} दीवार \end{hindi} & wall & deevaar \\
+        \begin{hindi} खिड़की \end{hindi} & window & keerkee \\
+        \begin{hindi} ज़मीन \end{hindi} & floor & zameen \\
+        \begin{hindi} छत \end{hindi} & roof & chat \\
+        \begin{hindi} बिस्तर \end{hindi} & bed & bistar \\
+        \begin{hindi} कमरा \end{hindi} & room & kamara \\
+
+    \end{tabular}
+    \caption{inanimate objects}
+    \label{tab:nouns_inanimate}
+\end{table}
+
+
+
+
+
+
+\begin{table}[H]
+    \centering 
+    \begin{tabular}{c|c|c}
+        \begin{hindi} काम \end{hindi} & work & kam \\
+    \end{tabular}
+    \caption{abstract objects}
+    \label{tab:nouns_abstract}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi} एक \end{hindi} & one & ek \\
+    \begin{hindi} दो  \end{hindi} & two & do \\
+    \begin{hindi} तीन \end{hindi} & three & tin \\
+    \begin{hindi} चार  \end{hindi} & four & chaar \\
+    \begin{hindi} पाँच \end{hindi} & five & panch \\
+    \begin{hindi} छह \end{hindi} & six & cheh \\
+    \begin{hindi} सात \end{hindi} & seven & saat  \\
+    \begin{hindi} आठ \end{hindi} & eight & aath \\
+    \begin{hindi} नौ  \end{hindi} & nine & nau \\
+    \begin{hindi} दस  \end{hindi} & ten & das \\
+    \begin{hindi} सौ  \end{hindi} & hundered & sau \\
+    \begin{hindi} हज़ार  \end{hindi} & thousand & hazaar \\
+    \begin{hindi} कई  \end{hindi} & many & kaee \\
+    \begin{hindi} आधा  \end{hindi} & half & adha \\
+    \begin{hindi} कुछ  \end{hindi} & some & kutsh \\
+    \end{tabular}
+    \caption{Cardinals, see the corresponding ordinals in Table \ref{tab:adjective_ordinals}}
+    \label{tab:nouns_cardinals}
+\end{table}
+
+\newpage 
+\subsubsection{Verbs}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi}पढ़,  पढ़ता \end{hindi} & read, reads & pow, perta \\
+        \begin{hindi}पी, पीता \end{hindi} & drink, drinks & pi, pita \\
+        \begin{hindi} खा, खाता \end{hindi} & eat, eats & ka, kata\\
+        \begin{hindi} रह, रहता \end{hindi} & live, lives & rha, rhata \\
+     \begin{hindi} कर, करता \end{hindi} & work, works & kar, kharta \\
+     \begin{hindi} खेल, खेलता \end{hindi} & play, plays & khel, khelta \\
+    \end{tabular}
+    \caption{Any}
+    \label{tab:verb_any}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi} पढ़ना \end{hindi} & read &  padhana\\
+        \begin{hindi} पीना \end{hindi} & drink &  pina \\
+        \begin{hindi} खाना \end{hindi} & eat &  khana \\
+        \begin{hindi} रहना \end{hindi} & stay &  rhana \\
+        \begin{hindi} करना \end{hindi} & work &  karana \\
+        \begin{hindi} खेलना \end{hindi} & play &  khlana \\
+        \begin{hindi} सोना \end{hindi} & sleep & sona \\
+        \begin{hindi} बात \end{hindi} & talk & bat \\
+        \begin{hindi} बोलना \end{hindi} & speak & bolna \\
+        \begin{hindi} जागना \end{hindi} & wake up & jāgtā \\
+
+    \end{tabular}
+    \caption{Infinitive Any}
+    \label{tab:verb_any_2}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+     \begin{hindi} बैठ, बैठता  \end{hindi} & sit, sits & beth, beth-ta \\
+     \begin{hindi} ?, खड़ा   \end{hindi} & stand, stands & ?, khara \\
+     \begin{hindi} जा, जाता \end{hindi} & go, goes & ja, jaata \\
+     \begin{hindi} आ, आता \end{hindi} & come, comes & aa, aata \\
+     \begin{hindi} उड़, उड़ता \end{hindi} & fly, flies & ur, urta \\
+     \begin{hindi} तैर, तैरता \end{hindi} & swim, swims & ther, therta \\
+     \begin{hindi} चल, चलता \end{hindi} & walk, walks & jhal, jhalta \\
+     \begin{hindi} दौड़, दौड़ता \end{hindi} & run, runs & daur, dauta \\
+    \end{tabular}
+    \caption{Movement}
+    \label{tab:verb_move}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+     \begin{hindi} बैठना  \end{hindi} & sit & beth \\
+     \begin{hindi} जाना \end{hindi} & go & ja, jaata \\
+     \begin{hindi} आना \end{hindi} & come & aa, aata \\
+     \begin{hindi} उड़ना \end{hindi} & fly & ur, urta \\
+     \begin{hindi} तैरना \end{hindi} & swim & ther, therta \\
+     \begin{hindi} चलना \end{hindi} & walk & jhal, jhalta \\
+     \begin{hindi} दौड़ना \end{hindi} & run & daur, dauta \\
+    \end{tabular}
+    \caption{Movement}
+    \label{tab:verb_move}
+\end{table}
+
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi}चाहिए \end{hindi} & need, want & chaahie\\
+        \begin{hindi}पसंद  \end{hindi} & like & pasad\\
+    \end{tabular}
+    \caption{emotions}
+    \label{tab:emotions}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi} खेल \end{hindi} & game, plays & khel \\
+    \end{tabular}
+    \caption{Double meanings}
+    \label{tab:doublemeanings}
+\end{table}
+
+\newpage  
+\subsubsection{Adjectives}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi} खुश \end{hindi} & happy & kush \\
+    \begin{hindi} दुखी \end{hindi} & sad & dukhee \\
+    \end{tabular}
+    \caption{emotions}
+    \label{tab:adjective_emotions}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi} खड़ा \end{hindi} & standing & khara \\
+    \end{tabular}
+    \caption{any}
+    \label{tab:adjective_any}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi} रंग \end{hindi} & color & rang \\
+    \begin{hindi} काला \end{hindi} & black & kala \\
+    \begin{hindi} सफ़ेद \end{hindi} & white & safed \\
+    \begin{hindi} लाल\end{hindi} & red & lal \\
+    \begin{hindi} हरा\end{hindi} & green & raha \\
+    \begin{hindi} नीला\end{hindi} & blue & nila \\
+    \begin{hindi} पीला\end{hindi} & yellow & pila \\
+    \end{tabular}
+    \caption{colors}
+    \label{tab:adjective_colors}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi} लंबा  \end{hindi} & tall & lamba \\
+    \begin{hindi} छोटा  \end{hindi} & short & chota \\
+    \begin{hindi} पतला \end{hindi} & thin & patalla \\
+    \begin{hindi} मोटा  \end{hindi} & fat & mota \\
+    \begin{hindi} बूढ़ा  \end{hindi} & old & budha \\
+    \begin{hindi} बड़ा  \end{hindi} & big & bada \\
+    \begin{hindi} बुरा  \end{hindi} & bad & bura \\
+    \begin{hindi} जवान \end{hindi} & young & javahn \\
+    \begin{hindi} सुंदर   \end{hindi} & attractive & sunder \\
+    \end{tabular}
+    \caption{characteristics}
+    \label{tab:adjective_colors}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi} पहला \end{hindi} & first & pahlee \\
+    \begin{hindi} दूसरा  \end{hindi} & second & dosra \\
+    \begin{hindi} तीसरा \end{hindi} & third & teesra \\
+    \begin{hindi} चौथी  \end{hindi} & fourth & chautee \\
+    \begin{hindi} पांचवां \end{hindi} & fifth & panchva \\
+    \begin{hindi} छठा \end{hindi} & sixth & chatha \\
+    \end{tabular}
+    \caption{ordinals}
+    \label{tab:adjective_ordinals}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi} खुला \end{hindi} & open & kula \\
+        \begin{hindi} बंद \end{hindi} & closed & band \\
+        \begin{hindi} नया \end{hindi} & new & naee \\
+        \begin{hindi} महँगा \end{hindi} & expensive & mahgaa \\
+        \begin{hindi} सस्ता \end{hindi} & cheap & sasta \\
+    \end{tabular}
+    \caption{describing objects}
+    \label{tab:adjectives_object_describing}
+\end{table}
+
+
+
+\newpage
+\subsubsection{Adverbs}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+\begin{hindi} बजे \end{hindi} & o'clock & baje \\  
+\begin{hindi} सुबह \end{hindi} & in the morning & subbah \\  
+\begin{hindi} से \end{hindi} & since & se \\  
+\begin{hindi} अब \end{hindi} & now & ab \\  
+\begin{hindi} कब \end{hindi} & when & kab \\  
+\begin{hindi} तब \end{hindi} & then & tab \\  
+    \end{tabular}
+    \caption{Temporal adverbs}
+    \label{tab:adverbs_temporal}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi} कैसे \end{hindi} & how & kaise \\
+    \begin{hindi} कौन \end{hindi} & who & kaun \\
+    \begin{hindi} कितने \end{hindi} & how many & kit(an)e \\
+    \begin{hindi} कहाँ \end{hindi} & where & kahaa \\
+    \begin{hindi} कब \end{hindi} & when & kab \\
+    \end{tabular}    
+    \caption{interrogative}
+    \label{tab:adverbs_interrogative}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}        
+    \begin{hindi} पीछे \end{hindi} & behind & pechee \\
+    \begin{hindi}  आगे \end{hindi} & ahead & aage  \\
+    \begin{hindi} अंदर \end{hindi} & inside & andar \\
+    \begin{hindi} बाहर \end{hindi} & outside & bahaar \\
+
+    \begin{hindi} दूर \end{hindi} & far & duur \\
+    \begin{hindi} ऊपर \end{hindi} & up & oopar \\
+    \begin{hindi} के ऊपर\end{hindi} & on top of & oopar ke \\
+    \begin{hindi} यहाँ \end{hindi} & here & yaha \\
+    \begin{hindi} वहाँ \end{hindi} & there & vaha \\
+
+    \end{tabular}    
+    \caption{spatial}
+    \label{tab:adverbs_spatial}
+\end{table}
+
+
+
+
+\newpage 
+\subsubsection{Pronouns}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+    \begin{hindi} वह \end{hindi} & that he/she & wah \\
+    \begin{hindi} यह \end{hindi} & this she,it& yah \\
+    \begin{hindi} वे \end{hindi} & they &  Weh \\
+    \begin{hindi} मैं \end{hindi} & I & mäh \\    
+    \begin{hindi} हम \end{hindi} &  we & ham \\    
+    \begin{hindi} तुम \end{hindi} &  you (familiar) & Tum\\    
+    \begin{hindi} आप \end{hindi} &  you (formal) & Aaap \\    
+    \begin{hindi} उसका  \end{hindi} & their her,his  & Uska \\    
+\begin{hindi} मेरा \end{hindi} &  my & Mera \\    
+\begin{hindi} तेरा \end{hindi} &  your & Tera \\    
+\begin{hindi} उनके    \end{hindi} & their & unke \\
+ \begin{hindi}  उनका \end{hindi} & her & Unka \\
+\begin{hindi}  आप \end{hindi} & you & aap \\
+    \end{tabular}
+    \caption{pronouns}    
+    \label{tab:pronouns}
+\end{table}
+
+
+
