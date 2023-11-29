@@ -1,0 +1,228 @@
+    label{tab:pronouns}
+     आप  & you & aap 
+     उनका  & her & Unka 
+     उनके  & their & unke 
+     तेरा  &  your & Tera     
+     मेरा  &  my & Mera     
+     उसका   & their her,his  & Uska     
+     आप  &  you (formal) & Aaap     
+     तुम  &  you (familiar) & Tum    
+     हम  &  we & ham     
+     मैं  & I & mäh     
+     वे  & they &  Weh 
+     यह  & this she,it& yah 
+     वह  & that he/she & wah 
+    label{tab:adverbs_spatial}
+     वहाँ  & there & vaha 
+     यहाँ  & here & yaha 
+     के ऊपर & on top of & oopar ke 
+     ऊपर  & up & oopar 
+     दूर  & far & duur 
+     बाहर  & outside & bahaar 
+     अंदर  & inside & andar 
+     आगे  & ahead & aage  
+     पीछे  & behind & pechee 
+    label{tab:adverbs_interrogative}
+     कब  & when & kab 
+     कहाँ  & where & kahaa 
+     कितने  & how many & kit(an)e 
+     कौन  & who & kaun 
+     कैसे  & how & kaise 
+    label{tab:adverbs_temporal}
+ कभी नहीं & never & kabhee-nahee   
+ कभी-कभी  & sometimes & kabhee-kabhee   
+ कभी  & ever & kabhee   
+ तब  & then & tab   
+ कब  & when & kab   
+ अब  & now & ab   
+ से  & since & se   
+ सुबह  & in the morning & subbah   
+ बजे  & o'clock & baje   
+    label{tab:adjectives_temporal}
+         पौने  & quarter to  & paune 
+         सवा  & quarter past  & sava 
+         साढ़े  & half past  & saadhe 
+    label{tab:adjectives_object_describing}
+         सस्ता  & cheap & sasta 
+         महँगा  & expensive & mahgaa 
+         नया  & new & naee 
+         बंद  & closed & band 
+         खुला  & open & kula 
+    label{tab:adjective_ordinals}
+     छठा  & sixth & chatha 
+     पांचवां  & fifth & panchva 
+     चौथी   & fourth & chautee 
+     तीसरा  & third & teesra 
+     दूसरा   & second & dosra 
+     पहला  & first & pahlee 
+    label{tab:adjective_colors}
+     सुंदर    & attractive & sunder 
+     जवान  & young & javahn 
+     बुरा   & bad & bura 
+     बड़ा   & big & bada 
+     बूढ़ा   & old & budha 
+     मोटा   & fat & mota 
+     पतला  & thin & patalla 
+     छोटा   & short & chota 
+     लंबा   & tall & lamba 
+    label{tab:adjective_colors}
+     पीला & yellow & pila 
+     नीला & blue & nila 
+     हरा & green & raha 
+     लाल & red & lal 
+     सफ़ेद  & white & safed 
+     काला  & black & kala 
+     रंग  & color & rang 
+    label{tab:adjective_any}
+     खड़ा  & standing & khara 
+    label{tab:adjective_emotions}
+     दुखी  & sad & dukhee 
+     खुश  & happy & kush 
+    label{tab:doublemeanings}
+         खेल  & game, plays & khel 
+    label{tab:verb_emotions}
+        पसंद   & like & pasad
+        चाहिए  & need, want & chaahie
+    label{tab:verbs_move}
+      दौड़ना  & run & daur, dauta 
+      चलना  & walk & jhal, jhalta 
+      तैरना  & swim & ther, therta 
+      उड़ना  & fly & ur, urta 
+      आना  & come & aa, aata 
+      जाना  & go & ja, jaata 
+      बैठना   & sit & beth 
+    label{tab:verbs_any}
+         जागना  & wake up & jāgtā 
+         बोलना  & speak & bolna 
+         बात  & talk & bat 
+         सोना  & sleep & sona 
+         खेलना  & play &  khlana 
+         करना  & work &  karana 
+         रहना  & stay &  rhana 
+         खाना  & eat &  khana 
+         पीना  & drink &  pina 
+         पढ़ना  & read &  padhana
+    label{tab:nouns_cardinals}
+     कुछ   & some & kutsh 
+     आधा   & half & adha 
+     कई   & many & kaee 
+     हज़ार   & thousand & hazaar 
+     सौ   & hundered & sau 
+     दस   & ten & das 
+     नौ   & nine & nau 
+     आठ  & eight & aath 
+     सात  & seven & saat  
+     छह  & six & cheh 
+     पाँच  & five & panch 
+     चार   & four & chaar 
+     तीन  & three & tin 
+     दो   & two & do 
+     एक  & one & ek 
+    label{tab:nouns_abstract}
+         काम  & work & kam 
+    label{tab:nouns_inanimate}
+         कमरा  & room & kamara 
+         बिस्तर  & bed & bistar 
+         छत  & roof & chat 
+         ज़मीन  & floor & zameen 
+         खिड़की  & window & keerkee 
+         दीवार  & wall & deevaar 
+         दरवाज़ा  & door & darwaza 
+         मकान  & house & makaan 
+         गाड़ी  & vehicle & gaadee 
+         रुपया  & rupee & rupia 
+         पैसा  & money & paisa 
+         मेज़  & table & mehz 
+         कुर्सी  & chair & kursi 
+    label{tab:nouns_places}
+      जगह  & place & jagah   
+           गली & street & galee   
+         शहर  & city & sheher   
+         गाँव  & village & ghav   
+         नदी  & river & nadhee   
+         सड़क  & road & saddak 
+         भारत  & indien & bharatt 
+         घर  & home & Ghr 
+         स्कूल  & school & skul 
+    label{tab:nouns_animals}
+          जानवर  & animal & dschahnvar 
+          चूहा  & mouse & chooha 
+          हाथी  & elephant & hathi 
+          कुत्ता  & dog & kutta 
+          घोड़ा   & horse& ghora  
+          गाय  & cow & gai 
+         बिल्ली  & cat & billi 
+          मोर  & peacock & mohr 
+         कबूतर  & pidgeon & kabuter 
+         पक्षी  & bird & pepshi 
+    label{tab:nouns_people}
+         लड़की  & girl & ladakee
+         लड़का  & boy & ladakaa
+         औरत  & woman & aurat
+         आदमी  & man & admee
+         दोस्त  & friend & dhost
+         लोग  & people & log 
+    label{tab:nouns_family}
+         बच्चा  & child & batscha 
+         परिवार  & family & parivar
+         दादा  & grandfather & dada
+         दादी  & grandmother & dadi ma
+         पिता  & father & pitta
+         माँ  & mother & mah
+         बहन  & sister & behen
+         भाई  & brother & bhai
+         बेटी  & daughter & beti
+         बेटा  & son & beta 
+    label{tab:nouns_anatomy}
+ आँख  & eye & aankh   
+ दाँत  & teeth & dant  
+ दिल  & heart & dil  
+ अंगुली  & finger & angulee  
+ अँगूठा  & thumb & angootha  
+ सिर  & head & sir  
+ बाल  & hair & bal  
+ मुँह  & mouth & muhn  
+ कान  & ear & kan  
+ नाक  & nose & nak  
+ पैर  & foot & pair  
+ हाथ  & hand & hat  
+    label{tab:nouns_time}
+ ढाई  & half past two & dhaee  
+ डेढ़  & half past one & dedh  
+ रात  & night & rhad  
+ सुबह  & morning & suhbah  
+ दोपहर  & afternoon & dopeher  
+ शाम  & evening & sham  
+ घंटा  & hour & ghanta  
+ मिनट  & minute & minute   
+ समय  & time & sahmeh   
+    label{tab:nouns_illness}
+         दवाई  & medicine & davai  
+         बुखार  & fever & bukhar   
+         दर्द  & pain & dard   
+    label{tab:nons_food}
+         शराब  & alcohol & Sharaab 
+         चाय  & tea & chai 
+         पानी  & water & pani 
+         मक्खन  & butter & makhan   
+         पनीर  & cheese & paneer   
+         मछली  & fish & manchalee   
+         अंडा  & egg & anda 
+         गाजर  & carrot & gajar  
+         चावल  & rice & Chavaal 
+         आलू  & potatoe & alu 
+         टमाटर  & tomatoe & tamatar 
+         सब्ज़ी  & vegetable & sabzee  
+         आम  & mango & aam  
+         संतर  & orange & santara 
+         नींबू  & lemon & nimboo 
+         सेब  & apple & sehb 
+         केला  & banana & kela 
+         फल  & fruits & Fhal  
+         खाना  & food & khanaa 
+    label{tab:postpositions}
+     पास  & nearby/belonging & pas 
+    का  & "'s" & ka 
+    पर  & on,at & par 
+    में  & in,within,during & me 
+    से  & from & se 

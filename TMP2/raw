@@ -1,4 +1,4 @@
-\subsubsection{Adpositions}
+\subsection{Adpositions}
 \begin{table}[H]
     \centering
     \begin{tabular}{c|c|c}        
@@ -7,40 +7,32 @@
     \begin{hindi}पर \end{hindi} & on,at & par \\
     \begin{hindi}का \end{hindi} & "'s" & ka \\
     \begin{hindi} पास \end{hindi} & nearby/belonging & pas \\
-
     \end{tabular}
-    \caption{postpositions, ka indicates posession and can be related to the english " 's ". Pas indicates ownership and is in combinations with forms of to be translated as "has/have"}
+    \caption{postpositions, ka indicates possession and can be related to the english " 's ". Pas indicates ownership and is in combinations with forms of to be translated as "has/have"}
     \label{tab:postpositions}
 \end{table}
 
 \newpage 
-\subsubsection{Nouns}
+\subsection{Nouns}
 \begin{table}[H]
     \centering
     \begin{tabular}{c|c|c}
-        \begin{hindi} खाना \end{hindi} & food & khanaa \\ \hline \hline
-
-        \begin{hindi} फल \end{hindi} & fruits & Fhal \\ \hline 
+        \begin{hindi} खाना \end{hindi} & food & khanaa \\
+        \begin{hindi} फल \end{hindi} & fruits & Fhal \\ 
         \begin{hindi} केला \end{hindi} & banana & kela \\
         \begin{hindi} सेब \end{hindi} & apple & sehb \\
         \begin{hindi} नींबू \end{hindi} & lemon & nimboo \\
         \begin{hindi} संतर \end{hindi} & orange & santara \\
-        \begin{hindi} आम \end{hindi} & mango & aam \\ \hline
-
-        \begin{hindi} सब्ज़ी \end{hindi} & vegetable & sabzee \\ \hline 
-
+        \begin{hindi} आम \end{hindi} & mango & aam \\ 
+        \begin{hindi} सब्ज़ी \end{hindi} & vegetable & sabzee \\ 
         \begin{hindi} टमाटर \end{hindi} & tomatoe & tamatar \\
         \begin{hindi} आलू \end{hindi} & potatoe & alu \\
         \begin{hindi} चावल \end{hindi} & rice & Chavaal \\
-        \begin{hindi} गाजर \end{hindi} & carrot & gajar \\ \hline 
-
+        \begin{hindi} गाजर \end{hindi} & carrot & gajar \\ 
         \begin{hindi} अंडा \end{hindi} & egg & anda \\
         \begin{hindi} मछली \end{hindi} & fish & manchalee \\  
         \begin{hindi} पनीर \end{hindi} & cheese & paneer \\  
         \begin{hindi} मक्खन \end{hindi} & butter & makhan \\  
-
-
-
         \begin{hindi} पानी \end{hindi} & water & pani \\
         \begin{hindi} चाय \end{hindi} & tea & chai \\
         \begin{hindi} शराब \end{hindi} & alcohol & Sharaab \\
@@ -53,9 +45,9 @@
 \begin{table}[H]
     \centering
     \begin{tabular}{c|c|c}
-\begin{hindi} दर्द \end{hindi} & pain & dard \\  
-\begin{hindi} बुखार \end{hindi} & fever & bukhar \\  
-\begin{hindi} दवाई \end{hindi} & medicine & davai \\ 
+        \begin{hindi} दर्द \end{hindi} & pain & dard \\  
+        \begin{hindi} बुखार \end{hindi} & fever & bukhar \\  
+        \begin{hindi} दवाई \end{hindi} & medicine & davai \\ 
     \end{tabular}
     \caption{Illness}
     \label{tab:nouns_illness}
@@ -71,11 +63,12 @@
 \begin{hindi} दोपहर \end{hindi} & afternoon & dopeher \\ 
 \begin{hindi} सुबह \end{hindi} & morning & suhbah \\ 
 \begin{hindi} रात \end{hindi} & night & rhad \\ 
+\begin{hindi} डेढ़ \end{hindi} & half past one & dedh \\ 
+\begin{hindi} ढाई \end{hindi} & half past two & dhaee \\ 
     \end{tabular}
     \caption{Time}
     \label{tab:nouns_time}
 \end{table}
-
 
 
 \begin{table}[H]
@@ -111,8 +104,7 @@
         \begin{hindi} दादी \end{hindi} & grandmother & dadi ma\\
         \begin{hindi} दादा \end{hindi} & grandfather & dada\\
         \begin{hindi} परिवार \end{hindi} & family & parivar\\
-                \begin{hindi} बच्चा \end{hindi} & child & batscha \\
-
+        \begin{hindi} बच्चा \end{hindi} & child & batscha \\
     \end{tabular}
     \caption{Family}
     \label{tab:nouns_family}
@@ -232,20 +224,8 @@
 \end{table}
 
 \newpage 
-\subsubsection{Verbs}
-\begin{table}[H]
-    \centering
-    \begin{tabular}{c|c|c}
-        \begin{hindi}पढ़,  पढ़ता \end{hindi} & read, reads & pow, perta \\
-        \begin{hindi}पी, पीता \end{hindi} & drink, drinks & pi, pita \\
-        \begin{hindi} खा, खाता \end{hindi} & eat, eats & ka, kata\\
-        \begin{hindi} रह, रहता \end{hindi} & live, lives & rha, rhata \\
-     \begin{hindi} कर, करता \end{hindi} & work, works & kar, kharta \\
-     \begin{hindi} खेल, खेलता \end{hindi} & play, plays & khel, khelta \\
-    \end{tabular}
-    \caption{Any}
-    \label{tab:verb_any}
-\end{table}
+\subsection{Verbs}
+
 
 \begin{table}[H]
     \centering
@@ -263,25 +243,11 @@
 
     \end{tabular}
     \caption{Infinitive Any}
-    \label{tab:verb_any_2}
+    \label{tab:verbs_any}
 \end{table}
 
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{c|c|c}
-     \begin{hindi} बैठ, बैठता  \end{hindi} & sit, sits & beth, beth-ta \\
-     \begin{hindi} ?, खड़ा   \end{hindi} & stand, stands & ?, khara \\
-     \begin{hindi} जा, जाता \end{hindi} & go, goes & ja, jaata \\
-     \begin{hindi} आ, आता \end{hindi} & come, comes & aa, aata \\
-     \begin{hindi} उड़, उड़ता \end{hindi} & fly, flies & ur, urta \\
-     \begin{hindi} तैर, तैरता \end{hindi} & swim, swims & ther, therta \\
-     \begin{hindi} चल, चलता \end{hindi} & walk, walks & jhal, jhalta \\
-     \begin{hindi} दौड़, दौड़ता \end{hindi} & run, runs & daur, dauta \\
-    \end{tabular}
-    \caption{Movement}
-    \label{tab:verb_move}
-\end{table}
+
 
 \begin{table}[H]
     \centering
@@ -295,7 +261,7 @@
      \begin{hindi} दौड़ना \end{hindi} & run & daur, dauta \\
     \end{tabular}
     \caption{Movement}
-    \label{tab:verb_move}
+    \label{tab:verbs_move}
 \end{table}
 
 
@@ -307,7 +273,7 @@
         \begin{hindi}पसंद  \end{hindi} & like & pasad\\
     \end{tabular}
     \caption{emotions}
-    \label{tab:emotions}
+    \label{tab:verb_emotions}
 \end{table}
 
 \begin{table}[H]
@@ -320,7 +286,7 @@
 \end{table}
 
 \newpage  
-\subsubsection{Adjectives}
+\subsection{Adjectives}
 
 \begin{table}[H]
     \centering
@@ -402,10 +368,19 @@
     \label{tab:adjectives_object_describing}
 \end{table}
 
-
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|c|c}
+        \begin{hindi} साढ़े \end{hindi} & half past  & saadhe \\
+        \begin{hindi} सवा \end{hindi} & quarter past  & sava \\
+        \begin{hindi} पौने \end{hindi} & quarter to  & paune \\
+    \end{tabular}
+    \caption{temporal adjectives}
+    \label{tab:adjectives_temporal}
+\end{table}
 
 \newpage
-\subsubsection{Adverbs}
+\subsection{Adverbs}
 
 \begin{table}[H]
     \centering
@@ -416,6 +391,9 @@
 \begin{hindi} अब \end{hindi} & now & ab \\  
 \begin{hindi} कब \end{hindi} & when & kab \\  
 \begin{hindi} तब \end{hindi} & then & tab \\  
+\begin{hindi} कभी \end{hindi} & ever & kabhee \\  
+\begin{hindi} कभी-कभी \end{hindi} & sometimes & kabhee-kabhee \\  
+\begin{hindi} कभी नहीं\end{hindi} & never & kabhee-nahee \\  
     \end{tabular}
     \caption{Temporal adverbs}
     \label{tab:adverbs_temporal}
@@ -439,16 +417,14 @@
     \centering
     \begin{tabular}{c|c|c}        
     \begin{hindi} पीछे \end{hindi} & behind & pechee \\
-    \begin{hindi}  आगे \end{hindi} & ahead & aage  \\
+    \begin{hindi} आगे \end{hindi} & ahead & aage  \\
     \begin{hindi} अंदर \end{hindi} & inside & andar \\
     \begin{hindi} बाहर \end{hindi} & outside & bahaar \\
-
     \begin{hindi} दूर \end{hindi} & far & duur \\
     \begin{hindi} ऊपर \end{hindi} & up & oopar \\
     \begin{hindi} के ऊपर\end{hindi} & on top of & oopar ke \\
     \begin{hindi} यहाँ \end{hindi} & here & yaha \\
     \begin{hindi} वहाँ \end{hindi} & there & vaha \\
-
     \end{tabular}    
     \caption{spatial}
     \label{tab:adverbs_spatial}
@@ -458,7 +434,7 @@
 
 
 \newpage 
-\subsubsection{Pronouns}
+\subsection{Pronouns}
 \begin{table}[H]
     \centering
     \begin{tabular}{c|c|c}
@@ -470,11 +446,11 @@
     \begin{hindi} तुम \end{hindi} &  you (familiar) & Tum\\    
     \begin{hindi} आप \end{hindi} &  you (formal) & Aaap \\    
     \begin{hindi} उसका  \end{hindi} & their her,his  & Uska \\    
-\begin{hindi} मेरा \end{hindi} &  my & Mera \\    
-\begin{hindi} तेरा \end{hindi} &  your & Tera \\    
-\begin{hindi} उनके    \end{hindi} & their & unke \\
- \begin{hindi}  उनका \end{hindi} & her & Unka \\
-\begin{hindi}  आप \end{hindi} & you & aap \\
+    \begin{hindi} मेरा \end{hindi} &  my & Mera \\    
+    \begin{hindi} तेरा \end{hindi} &  your & Tera \\    
+    \begin{hindi} उनके \end{hindi} & their & unke \\
+    \begin{hindi} उनका \end{hindi} & her & Unka \\
+    \begin{hindi} आप \end{hindi} & you & aap \\
     \end{tabular}
     \caption{pronouns}    
     \label{tab:pronouns}
