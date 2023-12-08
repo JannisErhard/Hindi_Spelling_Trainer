@@ -42,6 +42,10 @@
          पौने  & quarter to  & paune 
          सवा  & quarter past  & sava 
          साढ़े  & half past  & saadhe 
+    label{tab:adjectives_abstract}
+         आसान  & reasy & aasaan 
+         सही  & right & sahee 
+         ग़लत  & wrong & galat 
     label{tab:adjectives_object_describing}
          सस्ता  & cheap & sasta 
          महँगा  & expensive & mahgaa 
@@ -102,6 +106,12 @@
          खाना  & eat &  khana 
          पीना  & drink &  pina 
          पढ़ना  & read &  padhana
+    label{tab:nouns_literature}
+    कहानी    & story	&  kahaanee 
+    कविता    & poem 	&  kavita
+    किताब    & book 	&  kitaab
+    चिट्ठी   & letter 	&  citthi
+     अखबार & newspaper 	& akhabaar 
     label{tab:nouns_cardinals}
      कुछ   & some & kutsh 
      आधा   & half & adha 
@@ -144,6 +154,9 @@
          भारत  & indien & bharatt 
          घर  & home & Ghr 
          स्कूल  & school & skul 
+    label{tab:nouns_professions}
+         शिक्षक   &  teacher & shikshak 
+         लेखक  & writer &  lekhak
     label{tab:nouns_animals}
           जानवर  & animal & dschahnvar 
           चूहा  & mouse & chooha 
@@ -200,7 +213,7 @@
          दवाई  & medicine & davai  
          बुखार  & fever & bukhar   
          दर्द  & pain & dard   
-    label{tab:nons_food}
+    label{tab:nouns_food}
          शराब  & alcohol & Sharaab 
          चाय  & tea & chai 
          पानी  & water & pani 
