@@ -5,18 +5,22 @@ import pickle
 from spelling_test import spelling_test as sp
 
 def select_all():
+# selects all entries in tickable list
     for i in cbs:
         i.select()
 
 def deselect_all():
+# deselects all entries in tickable list
     for i in cbs:
         i.deselect()
 
 def print_decisions():
+# function for debugging purposes
     for decision in vocabulary_choices.keys():
         print(decision, ":" , vocabulary_choices[decision].get())
 
-def start_spelltest():
+def start_English_to_Hindi():
+# goes through decisions and appends them to list which will then be used for tests
     vocabulary = []
     for decision in vocabulary_choices.keys():
         if vocabulary_choices[decision].get():
@@ -24,7 +28,8 @@ def start_spelltest():
                 vocabulary.append([item[1], item[0]])
     sp(var1,sWindow,vocabulary,bg_grey)
 
-def start_spelltest_p():
+def start_Hindi_to_English():
+# goes through decisions and appends them to list which will then be used for tests
     vocabulary = []
     for decision in vocabulary_choices.keys():
         if vocabulary_choices[decision].get():
@@ -61,10 +66,10 @@ for category in unserialized_data.keys():
 #a = tk.Button(text="Check Decisions",command = print_decisions) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
 #a.grid(row=0,column=0)
 
-button_start_english_to_hindi = tk.Button(text="Translate English to Hindi",command = start_spelltest) 
+button_start_english_to_hindi = tk.Button(text="Translate English to Hindi",command = start_English_to_Hindi) 
 button_start_english_to_hindi.grid(row=2,column=0,sticky="NESW")
 
-button_start_hindi_to_english = tk.Button(text="Translate Hindi to English",command = start_spelltest_p) 
+button_start_hindi_to_english = tk.Button(text="Translate Hindi to English",command = start_Hindi_to_English) 
 button_start_hindi_to_english.grid(row=2,column=1,sticky="NESW")
 
 button_start_english_to_hindi = tk.Button(text="Deselect All",command = deselect_all) 
