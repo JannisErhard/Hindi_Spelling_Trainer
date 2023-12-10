@@ -18,10 +18,11 @@ def press(key):
     state, nright, nwrong,  vocab, k= select(key,state, k, vocab, gocabulary, nright, nwrong, l2, mWindow, go_bg_grey)
 
 def spelling_test(var1,sWindow,vocabulary,bg_grey):
+    # this draws the "spelling test" window
     global l2, mWindow, gocabulary, vocab, go_bg_grey
     gocabulary = vocabulary
     go_bg_grey = bg_grey
-    if var1.get():
+    if var1:
         random.shuffle(vocabulary)
     sWindow.destroy()
     mWindow=tk.Tk() 
@@ -38,7 +39,6 @@ def spelling_test(var1,sWindow,vocabulary,bg_grey):
     for i,row in enumerate(buttons):
         for j,key in enumerate(row):
             tk.Button(mWindow,text=key,font=('Times', 24),width=6,height=2,relief='raised',command=lambda x=key:press(x),bd=6).grid(row=i+4,column=j)
-    mWindow.grid_rowconfigure(0,weight=1)
-    mWindow.grid_rowconfigure(1,weight=1)
-    mWindow.grid_rowconfigure(2,weight=1)
-
+    mWindow.grid_rowconfigure(0,weight=1) # afaik, this is here so lines scale when window is scaled
+    mWindow.grid_rowconfigure(1,weight=1) # afaik, this is here so lines scale when window is scaled
+    mWindow.grid_rowconfigure(2,weight=1) # afaik, this is here so lines scale when window is scaled
