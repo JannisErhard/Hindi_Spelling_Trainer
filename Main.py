@@ -86,6 +86,7 @@ def Main():
     tk.Checkbutton(sWindow, text="randomize", variable=var1).grid(row=3,column=0,sticky='N')
     
     sWindow.grid_columnconfigure(0,weight=1)
+    sWindow.grid_columnconfigure(1,weight=1)
     sWindow.grid_rowconfigure(0,weight=1)
     sWindow.grid_rowconfigure(1,weight=1)
     sWindow.grid_rowconfigure(2,weight=1)
