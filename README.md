@@ -2,7 +2,7 @@
 ## Prerequisites
 requires  python3, tkinter and Customtkinter to run. Ubuntu, bash:
 
-`sudo apt-get install python3`
+`sudo apt-get install python3`\
 `pip install tk`\
 `pip install Customtkinter`
 

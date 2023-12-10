@@ -77,11 +77,11 @@ def Main():
     button_start_hindi_to_english = tk.Button(text="Translate Hindi to English",command =lambda *args: start_Hindi_to_English(sWindow,bg_grey)) 
     button_start_hindi_to_english.grid(row=2,column=1,sticky="NESW")
     
-    button_start_english_to_hindi = tk.Button(text="Deselect All",command = deselect_all) 
-    button_start_english_to_hindi.grid(row=0,column=0,sticky="NESW")
+    button_deselect_all = tk.Button(text="Deselect All",command = deselect_all) 
+    button_deselect_all.grid(row=0,column=0,sticky="NESW")
     
-    button_start_hindi_to_english = tk.Button(text="Select All",command = select_all) 
-    button_start_hindi_to_english.grid(row=0,column=1,sticky="NESW")
+    button_select_all = tk.Button(text="Select All",command = select_all) 
+    button_select_all.grid(row=0,column=1,sticky="NESW")
     
     tk.Checkbutton(sWindow, text="randomize", variable=var1).grid(row=3,column=0,sticky='N')
     
