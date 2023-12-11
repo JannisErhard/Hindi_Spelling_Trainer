@@ -9,6 +9,3 @@ requires  python3, tkinter and Customtkinter to run. Ubuntu, bash:
 ## Usage
 run:\
 `python3 Main.py`
-
-## Todo
-need to restructure code to avoid necessity if impossible circular imports

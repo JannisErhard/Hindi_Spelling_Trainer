@@ -3,6 +3,7 @@ from read_data import read_dictionary
 from utils import generate_checkboxes, select_all, deselect_all, generate_English_to_Hindi_vocabulary, generate_Hindi_to_English_vocabulary, make_keyboard
 from tkinter.scrolledtext import ScrolledText
 from us_grades import grade
+from flashcard import flashcard
 
 root=tk.Tk()
 root.title('Selfcontained')
@@ -35,11 +36,11 @@ class Main():
             if self.l2.get() ==self. vocab[1]:
                 self.nright+=1
                 tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
-                tk.Label(self.Frame,text='Correct',fg='green', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
+                tk.Label(self.Frame,text='Correct',fg='green', font=('Times', 24), height=2).grid(row=2,column=0,columnspan=13,pady=3)
             else :
                 self.nwrong+=1
                 tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
-                tk.Label(self.Frame,text='Incorrect. Proper Solution: '+self.vocab[1],fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
+                tk.Label(self.Frame,text='Incorrect. Proper Solution: '+self.vocab[1],fg='red', font=('Times', 24), height=2).grid(row=2,column=0,columnspan=13)
             self.state = False
         else:
             if self.k == len(self.vocabulary)-1:
@@ -48,12 +49,7 @@ class Main():
             else:
                 self.k+=1
                 self.vocab = self.vocabulary[self.k]
-                tk.Label(self.Frame,text=' '*80,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13,sticky="NEWS")
-                tk.Label(self.Frame,text=f"Translate \"{self.vocab[0]}\"",fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13,sticky="NEWS")
-                tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
-                tk.Label(self.Frame,text='??????????',fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
-                tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
-                tk.Label(self.Frame,text=f'right = {self.nright}, wrong = {self.nwrong}; '+grade(self.nright/(self.nright+self.nwrong)),fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
+                self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
                 self.l2.delete(0,'end')
                 self.state = True
     
@@ -92,14 +88,7 @@ class Main():
         self.vocabulary = generate_Hindi_to_English_vocabulary(self.choices, self.dictionary)
         self.vocab = self.vocabulary[self.k]
         # design of flashcard
-        tk.Label(self.Frame,text=' '*80,fg='green', font=('Times', 24), height=2).grid(row=0,column=0,sticky="NEWS")
-        tk.Label(self.Frame,text=f"Translate \"{self.vocab[0]}\"",fg='green', font=('Times', 24), height=2).grid(row=0,column=0,sticky="NEWS")
-        self.l2=tk.Entry(self.Frame,width=35,bg='black',fg='white',relief='raised',selectborderwidth=5, font=('Times', 24))
-        self.l2.grid(row=1,column=0,sticky="ns")
-        tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,pady=3)
-        tk.Label(self.Frame,text='??????????',fg='black', font=('Times', 24)).grid(row=2,column=0,pady=3)
-        tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0)
-        tk.Label(self.Frame,text=f'right = {self.nright}, wrong = {self.nwrong}; '+grade(1.0),fg='black', font=('Times', 24)).grid(row=2,column=0)
+        self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
         enter_button = tk.Button(self.Frame, text=" Enter ", font=('Times', 24),width=6,height=2, relief='raised', command = self.Enter)
         enter_button.grid(row=3,column=0,sticky="NESW")
 
@@ -114,19 +103,15 @@ class Main():
         self.vocabulary = generate_English_to_Hindi_vocabulary(self.choices, self.dictionary)
         # design flashcard
         self.vocab = self.vocabulary[self.k]
-        tk.Label(self.Frame,text=' '*80,fg='green', font=('Times', 24), height=2).grid(row=0,column=0,columnspan=13,sticky="NEWS")
-        tk.Label(self.Frame,text=f"Translate \"{self.vocab[0]}\"",fg='green', font=('Times', 24), height=2).grid(row=0,column=0,columnspan=13,sticky="NEWS")
-        self.l2=tk.Entry(self.Frame,width=35,bg='black',fg='white',relief='raised',selectborderwidth=5, font=('Times', 24))
-        self.l2.grid(row=1,column=0,columnspan=13,sticky="ns")
-        tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
-        tk.Label(self.Frame,text='??????????',fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
-        tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
-        tk.Label(self.Frame,text=f'right = {self.nright}, wrong = {self.nwrong}; '+grade(1.0),fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
         # design keyboard
-        make_keyboard(self.Frame, self.press)
-    
-        enter_button = tk.Button(self.Frame, text=" ↵ ", font=('Times', 24),width=6,height=2, relief='raised', command = self.Enter)
+        Keyboard_Frame = tk.LabelFrame(self.Frame, text="Hindi Keyboard", padx=4, pady=5)
+        Keyboard_Frame.grid(row=3,column=0,sticky="NESW")
+        make_keyboard(Keyboard_Frame, self.press)
+        enter_button = tk.Button(Keyboard_Frame, text=" ↵ ", font=('Times', 24),width=6,height=2, relief='raised', command = self.Enter)
         enter_button.grid(row=5,column=12,sticky="NESW")
+        # make flashcard
+        self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
+    
 
 
     def sub_menue(self):
@@ -134,18 +119,10 @@ class Main():
         self.Frame.destroy()
         self.Frame = tk.LabelFrame(self.window, text="Here is text", padx=4, pady=5)
         self.Frame.pack()
-        
-
-
         l1=tk.Label(self.Frame,text='b'*80,fg='red', font=('Times', 24), height=2)
         l1.grid(row=0,column=0,columnspan=1,sticky="NEWS")
         button1 = tk.Button(self.Frame, text="Start Start", command = self.start_menue)
         button1.grid(row=1,column=0,columnspan=1,sticky="NEWS")
-
-
-    def restart_window(self):
-        myButton = tk.Button(text="Select All",command = start_menue)
-        myButton.grid(row=0,column=1,sticky="NESW")
 
 
 Main = Main(root)
