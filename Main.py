@@ -1,101 +1,152 @@
 import tkinter as tk
-import customtkinter as ctk
+from read_data import read_dictionary 
+from utils import generate_checkboxes, select_all, deselect_all, generate_English_to_Hindi_vocabulary, generate_Hindi_to_English_vocabulary, make_keyboard
 from tkinter.scrolledtext import ScrolledText
-import pickle
-from spelling_test import spelling_test as sp
+from us_grades import grade
+
+root=tk.Tk()
+root.title('Selfcontained')
+root.geometry("400x400")
 
 
-cbs = []
-vocabulary_choices = {}
-var1 = False 
+class Main():
+    def __init__(self, master):
+        var_1 = ''
+        self.dictionary=read_dictionary()
+        self.window=master
+        self.Frame=tk.LabelFrame(self.window, text="")
+        self.start_menue()
+        self.k, self.nright, self.nwrong = 0, 0, 0
+        self.state = True
+    
+    def press(self, value):
+        # only way to carry variables over
+        length=len(self.l2.get())
+        if (value=='Erase'):
+            self.l2.delete(length-1,length)
+            length=length-1
+        elif value=='Space':
+            self.l2.insert(length,' ')
+        else:
+            self.l2.insert(length,value)
 
-with open('vocabulary.pkl', 'rb') as handle:
-    unserialized_data = pickle.load(handle)
-    unserialized_data = dict(sorted(unserialized_data.items()))
+    def Enter(self):
+        if self.state:
+            if self.l2.get() ==self. vocab[1]:
+                self.nright+=1
+                tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
+                tk.Label(self.Frame,text='Correct',fg='green', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
+            else :
+                self.nwrong+=1
+                tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
+                tk.Label(self.Frame,text='Incorrect. Proper Solution: '+self.vocab[1],fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
+            self.state = False
+        else:
+            if self.k == len(self.vocabulary)-1:
+                print("great, its done")
+                self.start_menue()
+            else:
+                self.k+=1
+                self.vocab = self.vocabulary[self.k]
+                tk.Label(self.Frame,text=' '*80,fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13,sticky="NEWS")
+                tk.Label(self.Frame,text=f"Translate \"{self.vocab[0]}\"",fg='green', font=('Times', 24)).grid(row=0,column=0,columnspan=13,sticky="NEWS")
+                tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
+                tk.Label(self.Frame,text='??????????',fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
+                tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
+                tk.Label(self.Frame,text=f'right = {self.nright}, wrong = {self.nwrong}; '+grade(self.nright/(self.nright+self.nwrong)),fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
+                self.l2.delete(0,'end')
+                self.state = True
+    
+    def start_menue(self):
+        # overhead 
+        self.Frame.destroy()
+        self.Frame = tk.LabelFrame(self.window, text="Choose Vocabulary", padx=4, pady=5)
+        self.Frame.pack()
 
-def select_all():
-# selects all entries in tickable list
-    for i in cbs:
-        i.select()
+        # generate ... menue # self.Frame
+        scroll_text = ScrolledText(self.Frame, width=20, height=10)
+        checkboxes, self.choices = generate_checkboxes(self.dictionary, scroll_text)
+        scroll_text.grid(row=0,sticky="NESW")
+       
+        # set up buttons
+        button_deselect = tk.Button(self.Frame, text="Deselect All", command =lambda *args: deselect_all(checkboxes))
+        button_deselect.grid(row=1,column=0,sticky="NESW")
 
-def deselect_all():
-# deselects all entries in tickable list
-    for i in cbs:
-        i.deselect()
+        button_select = tk.Button(self.Frame, text="Select All", command =lambda *args: select_all(checkboxes))
+        button_select.grid(row=1,column=1,sticky="NESW")
 
-def print_decisions():
-# function for debugging purposes
-    for decision in vocabulary_choices.keys():
-        print(decision, ":" , vocabulary_choices[decision].get())
+        button_start_english_to_hindi = tk.Button(self.Frame, text="Translate English to Hindi", command = self.english_to_hindi)
+        button_start_english_to_hindi.grid(row=2,column=0,sticky="NESW")
 
-def start_English_to_Hindi(sWindow, bg_grey):
-# goes through decisions and appends them to list which will then be used for tests
-    vocabulary = []
-    for decision in vocabulary_choices.keys():
-        if vocabulary_choices[decision].get():
-            for item in unserialized_data[decision][0:]:
-                vocabulary.append([item[1], item[0]])
-    sp(var1,sWindow,vocabulary,bg_grey)
-
-def start_Hindi_to_English(sWindow, bg_grey):
-# goes through decisions and appends them to list which will then be used for tests
-    vocabulary = []
-    for decision in vocabulary_choices.keys():
-        if vocabulary_choices[decision].get():
-            for item in unserialized_data[decision][0:]:
-                vocabulary.append([item[0], item[1]])
-    sp(var1,sWindow,vocabulary,bg_grey)
-
-
-def Main():
-    sWindow = ctk.CTk()
-    bg_grey = sWindow.cget('bg')
-    sWindow.title("Setup Menu - Hindi Language Trainer")
-    
-    text = ScrolledText(sWindow, width=20, height=10)
-    text.grid(row=1,columnspan=2,sticky="NESW")
-    
-    # Load data (deserialize)
-    
-    
-    for category in unserialized_data.keys():
-        vocabulary_choices[category] = tk.BooleanVar()
-        cb = tk.Checkbutton(text, text=category, bg='white', anchor='w', cursor='arrow',variable=vocabulary_choices[category])
-        text.window_create('end', window=cb)
-        text.insert('end', '\n')
-        cbs.append(cb)
-    
-    
-    
-    
-    #a = tk.Button(text="Check Decisions",command = print_decisions) #command=spelling_test(var1,sWindow,vocabulary,bg_grey))
-    #a.grid(row=0,column=0)
-    
-    button_start_english_to_hindi = tk.Button(text="Translate English to Hindi",command = lambda *args: start_English_to_Hindi(sWindow,bg_grey)) 
-    button_start_english_to_hindi.grid(row=2,column=0,sticky="NESW")
-    
-    button_start_hindi_to_english = tk.Button(text="Translate Hindi to English",command =lambda *args: start_Hindi_to_English(sWindow,bg_grey)) 
-    button_start_hindi_to_english.grid(row=2,column=1,sticky="NESW")
-    
-    button_deselect_all = tk.Button(text="Deselect All",command = deselect_all) 
-    button_deselect_all.grid(row=0,column=0,sticky="NESW")
-    
-    button_select_all = tk.Button(text="Select All",command = select_all) 
-    button_select_all.grid(row=0,column=1,sticky="NESW")
-    
-    tk.Checkbutton(sWindow, text="randomize", variable=var1).grid(row=3,column=0,sticky='N')
-    
-    sWindow.grid_columnconfigure(0,weight=1)
-    sWindow.grid_columnconfigure(1,weight=1)
-    sWindow.grid_rowconfigure(0,weight=1)
-    sWindow.grid_rowconfigure(1,weight=1)
-    sWindow.grid_rowconfigure(2,weight=1)
-    sWindow.grid_rowconfigure(3,weight=1)
-    
-    sWindow.mainloop()
+        button_start_hindi_to_english = tk.Button(self.Frame, text="Translate Hindi to English", command = self.hindi_to_english)
+        button_start_hindi_to_english.grid(row=2,column=1,sticky="NESW")
 
 
-Main()
+    def hindi_to_english(self):
+        # overhead
+        self.Frame.destroy()
+        self.Frame = tk.LabelFrame(self.window, text="Here is text", padx=4, pady=5)
+        self.Frame.pack()
+        root.geometry(f"{root.winfo_screenwidth()//12*5}x{root.winfo_screenheight()//5*2}")
+        # pick out words 
+        self.vocabulary = generate_Hindi_to_English_vocabulary(self.choices, self.dictionary)
+        self.vocab = self.vocabulary[self.k]
+        # design of flashcard
+        tk.Label(self.Frame,text=' '*80,fg='green', font=('Times', 24), height=2).grid(row=0,column=0,sticky="NEWS")
+        tk.Label(self.Frame,text=f"Translate \"{self.vocab[0]}\"",fg='green', font=('Times', 24), height=2).grid(row=0,column=0,sticky="NEWS")
+        self.l2=tk.Entry(self.Frame,width=35,bg='black',fg='white',relief='raised',selectborderwidth=5, font=('Times', 24))
+        self.l2.grid(row=1,column=0,sticky="ns")
+        tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,pady=3)
+        tk.Label(self.Frame,text='??????????',fg='black', font=('Times', 24)).grid(row=2,column=0,pady=3)
+        tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0)
+        tk.Label(self.Frame,text=f'right = {self.nright}, wrong = {self.nwrong}; '+grade(1.0),fg='black', font=('Times', 24)).grid(row=2,column=0)
+        enter_button = tk.Button(self.Frame, text=" Enter ", font=('Times', 24),width=6,height=2, relief='raised', command = self.Enter)
+        enter_button.grid(row=3,column=0,sticky="NESW")
 
 
-# see https://www.reddit.com/r/learnprogramming/comments/y6opmu/python3what_is_an_intvar/ for explanation on wtf these Tkinter variables are ...
+    def english_to_hindi(self):
+        # overhead
+        self.Frame.destroy()
+        self.Frame = tk.LabelFrame(self.window, text="Here is text", padx=4, pady=5)
+        self.Frame.pack()
+        root.geometry(f"{root.winfo_screenwidth()//12*11}x{root.winfo_screenheight()//5*4}")
+        # pick out words 
+        self.vocabulary = generate_English_to_Hindi_vocabulary(self.choices, self.dictionary)
+        # design flashcard
+        self.vocab = self.vocabulary[self.k]
+        tk.Label(self.Frame,text=' '*80,fg='green', font=('Times', 24), height=2).grid(row=0,column=0,columnspan=13,sticky="NEWS")
+        tk.Label(self.Frame,text=f"Translate \"{self.vocab[0]}\"",fg='green', font=('Times', 24), height=2).grid(row=0,column=0,columnspan=13,sticky="NEWS")
+        self.l2=tk.Entry(self.Frame,width=35,bg='black',fg='white',relief='raised',selectborderwidth=5, font=('Times', 24))
+        self.l2.grid(row=1,column=0,columnspan=13,sticky="ns")
+        tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
+        tk.Label(self.Frame,text='??????????',fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
+        tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
+        tk.Label(self.Frame,text=f'right = {self.nright}, wrong = {self.nwrong}; '+grade(1.0),fg='black', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
+        # design keyboard
+        make_keyboard(self.Frame, self.press)
+    
+        enter_button = tk.Button(self.Frame, text=" ↵ ", font=('Times', 24),width=6,height=2, relief='raised', command = self.Enter)
+        enter_button.grid(row=5,column=12,sticky="NESW")
+
+
+    def sub_menue(self):
+        # overhead
+        self.Frame.destroy()
+        self.Frame = tk.LabelFrame(self.window, text="Here is text", padx=4, pady=5)
+        self.Frame.pack()
+        
+
+
+        l1=tk.Label(self.Frame,text='b'*80,fg='red', font=('Times', 24), height=2)
+        l1.grid(row=0,column=0,columnspan=1,sticky="NEWS")
+        button1 = tk.Button(self.Frame, text="Start Start", command = self.start_menue)
+        button1.grid(row=1,column=0,columnspan=1,sticky="NEWS")
+
+
+    def restart_window(self):
+        myButton = tk.Button(text="Select All",command = start_menue)
+        myButton.grid(row=0,column=1,sticky="NESW")
+
+
+Main = Main(root)
+root.mainloop()
