@@ -5,5 +5,8 @@ def flashcard(Frame, nright, nwrong, vocab, grade):
     l2=tk.Entry(Frame,width=35,bg='black',fg='white',relief='raised',selectborderwidth=5, font=('Times', 24))
     l2.grid(row=1,sticky="ns")
     tk.Label(Frame,text=' '*80,fg='red', font=('Times', 24), height=2).grid(row=2)
-    tk.Label(Frame,text=f'right = {nright}, wrong = {nwrong}; '+grade(1.0),fg='black', font=('Times', 24), height=2).grid(row=2)
+    if nright+nwrong > 0:
+        tk.Label(Frame,text=f'right = {nright}, wrong = {nwrong}; '+grade((nright)/(nright+nwrong)),fg='black', font=('Times', 24), height=2).grid(row=2)
+    else:
+        tk.Label(Frame,text=f'right = {nright}, wrong = {nwrong}',fg='black', font=('Times', 24), height=2).grid(row=2)
     return l2 
