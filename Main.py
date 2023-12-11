@@ -16,9 +16,10 @@ class Main():
         self.dictionary=read_dictionary()
         self.window=master
         self.Frame=tk.LabelFrame(self.window, text="")
-        self.start_menue()
         self.k, self.nright, self.nwrong = 0, 0, 0
         self.state = True
+        self.randomize = True
+        self.start_menue()
     
     def press(self, value):
         # only way to carry variables over
@@ -58,6 +59,7 @@ class Main():
         self.Frame.destroy()
         self.Frame = tk.LabelFrame(self.window, text="Choose Vocabulary", padx=4, pady=5)
         self.Frame.pack()
+        root.geometry("400x400")
 
         # generate ... menue # self.Frame
         scroll_text = ScrolledText(self.Frame, width=20, height=10)
@@ -77,36 +79,41 @@ class Main():
         button_start_hindi_to_english = tk.Button(self.Frame, text="Translate Hindi to English", command = self.hindi_to_english)
         button_start_hindi_to_english.grid(row=2,column=1,sticky="NESW")
 
+        tk.Checkbutton(self.Frame, text="randomize", variable = self.randomize, onvalue=True, offvalue=False).grid(row=3,column=0,sticky='NEWS')
+
 
     def hindi_to_english(self):
+        print(self.randomize)
         # overhead
         self.Frame.destroy()
-        self.Frame = tk.LabelFrame(self.window, text="Here is text", padx=4, pady=5)
+        self.Frame = tk.LabelFrame(self.window, text="Translate Hindi to English", padx=4, pady=5)
         self.Frame.pack()
         root.geometry(f"{root.winfo_screenwidth()//12*5}x{root.winfo_screenheight()//5*2}")
         # pick out words 
-        self.vocabulary = generate_Hindi_to_English_vocabulary(self.choices, self.dictionary)
+        self.vocabulary = generate_Hindi_to_English_vocabulary(self.choices, self.dictionary, self.randomize)
         self.vocab = self.vocabulary[self.k]
-        # design of flashcard
-        self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
+        # design enter button
         enter_button = tk.Button(self.Frame, text=" Enter ", font=('Times', 24),width=6,height=2, relief='raised', command = self.Enter)
         enter_button.grid(row=3,column=0,sticky="NESW")
+        # design of flashcard
+        self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
 
 
     def english_to_hindi(self):
         # overhead
         self.Frame.destroy()
-        self.Frame = tk.LabelFrame(self.window, text="Here is text", padx=4, pady=5)
+        self.Frame = tk.LabelFrame(self.window, text="Translate English to Hindi", padx=4, pady=5)
         self.Frame.pack()
         root.geometry(f"{root.winfo_screenwidth()//12*11}x{root.winfo_screenheight()//5*4}")
         # pick out words 
-        self.vocabulary = generate_English_to_Hindi_vocabulary(self.choices, self.dictionary)
+        self.vocabulary = generate_English_to_Hindi_vocabulary(self.choices, self.dictionary, self.randomize)
         # design flashcard
         self.vocab = self.vocabulary[self.k]
         # design keyboard
         Keyboard_Frame = tk.LabelFrame(self.Frame, text="Hindi Keyboard", padx=4, pady=5)
         Keyboard_Frame.grid(row=3,column=0,sticky="NESW")
         make_keyboard(Keyboard_Frame, self.press)
+        # design enter button
         enter_button = tk.Button(Keyboard_Frame, text=" ↵ ", font=('Times', 24),width=6,height=2, relief='raised', command = self.Enter)
         enter_button.grid(row=5,column=12,sticky="NESW")
         # make flashcard

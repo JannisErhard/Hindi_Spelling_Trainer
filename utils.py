@@ -1,3 +1,4 @@
+import random
 import tkinter as tk
 from button_file import buttons
 
@@ -22,22 +23,28 @@ def deselect_all(checkboxes):
         checkbox.deselect()
 
 
-def generate_English_to_Hindi_vocabulary(vocabulary_choices, unserialized_data):
+def generate_English_to_Hindi_vocabulary(vocabulary_choices, unserialized_data, randomize):
 # goes through decisions and appends them to list which will then be used for tests
+    print(randomize)
     vocabulary = []
     for decision in vocabulary_choices.keys():
         if vocabulary_choices[decision].get():
             for item in unserialized_data[decision][0:]:
                 vocabulary.append([item[1], item[0]])
+    if randomize:
+        random.shuffle(vocabulary)
     return vocabulary 
 
-def generate_Hindi_to_English_vocabulary(vocabulary_choices, unserialized_data):
+def generate_Hindi_to_English_vocabulary(vocabulary_choices, unserialized_data, randomize):
 # goes through decisions and appends them to list which will then be used for tests
+    print(randomize)
     vocabulary = []
     for decision in vocabulary_choices.keys():
         if vocabulary_choices[decision].get():
             for item in unserialized_data[decision][0:]:
                 vocabulary.append([item[0], item[1]])
+    if randomize:
+        random.shuffle(vocabulary)
     return vocabulary
 
 def make_keyboard(Frame, press):
