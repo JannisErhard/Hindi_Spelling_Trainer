@@ -29,6 +29,9 @@
      कौन  & who & kaun 
      कैसे  & how & kaise 
     label{tab:adverbs_temporal}
+ बाद  & after & baad    
+ बाद में & later & baad mein  
+ हमेशा & always & hamesha   
  कभी नहीं & never & kabhee-nahee   
  कभी-कभी  & sometimes & kabhee-kabhee   
  कभी  & ever & kabhee   
@@ -96,10 +99,12 @@
       आना  & come & aa, aata 
       जाना  & go & ja, jaata 
       बैठना   & sit & beth 
+    label{tab:verbs_communication}
+         पूछना  & ask & poochna 
+         बोलना  & speak & bolna 
+         बातना  & talk & batna 
     label{tab:verbs_any}
          जागना  & wake up & jāgtā 
-         बोलना  & speak & bolna 
-         बात  & talk & bat 
          सोना  & sleep & sona 
          खेलना  & play &  khlana 
          करना  & work &  karana 
@@ -200,6 +205,16 @@
  नाक  & nose & nak  
  पैर  & foot & pair  
  हाथ  & hand & hat  
+    label{tab:nouns_months}
+ जनवरी  & january & janavaree   
+    label{tab:nouns_weekdays}
+ रविवार  & sunday & ravivaar  
+ शनिवार  & saturday & shanivaar  
+ शुक्रवार  & friday & shukravaar  
+ गुरुवार  & thursday & guruvaar  
+ बुधवार  & wednesday & budhavaar  
+ मंगलवार  & thuesday & mangalavaar   
+ सोमवार  & monday & somavaar   
     label{tab:nouns_time}
  ढाई  & half past two & dhaee  
  डेढ़  & half past one & dedh  
@@ -207,6 +222,10 @@
  सुबह  & morning & suhbah  
  दोपहर  & afternoon & dopeher  
  शाम  & evening & sham  
+ साल  & year & saal  
+ महीना  & month & maheena  
+ हफ्ता  & week & haphta  
+ दिन  & day & day  
  घंटा  & hour & ghanta  
  मिनट  & minute & minute   
  समय  & time & sahmeh   
@@ -214,6 +233,10 @@
          दवाई  & medicine & davai  
          बुखार  & fever & bukhar   
          दर्द  & pain & dard   
+    label{tab:nouns_communication}
+        गाना  & sing & gaana  
+         जवाब  & answer & javaab  
+         सवाल  & question & savaal 
     label{tab:nouns_food}
          शराब  & alcohol & Sharaab 
          चाय  & tea & chai 
