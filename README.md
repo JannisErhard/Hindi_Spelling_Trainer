@@ -9,3 +9,7 @@ requires  python3, tkinter and Customtkinter to run. Ubuntu, bash:
 ## Usage
 run:\
 `python3 Main.py`
+
+## Plans
+Collect and do something with the wrong answers
+build a hook for the enter key
