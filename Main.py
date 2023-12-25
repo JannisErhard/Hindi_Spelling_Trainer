@@ -19,6 +19,7 @@ class Main():
         self.k, self.nright, self.nwrong = 0, 0, 0
         self.state = True
         self.randomize = True
+        self.mistakes = []
         self.start_menue()
     
     def press(self, value):
@@ -42,11 +43,24 @@ class Main():
                 self.nwrong+=1
                 tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
                 tk.Label(self.Frame,text='Incorrect. Proper Solution: '+self.vocab[1],fg='red', font=('Times', 24), height=2).grid(row=2,column=0,columnspan=13)
+                self.mistakes.append(self.vocab)
             self.state = False
         else:
             if self.k == len(self.vocabulary)-1:
                 print("great, its done")
-                self.start_menue()
+                print(self.mistakes)
+                if not self.mistakes:
+                    self.k, self.nright, self.nwrong = 0, 0, 0
+                    self.start_menue()
+                else:
+                    self.vocabulary = self.mistakes[:]
+                    self.mistakes  = []
+                    self.k, self.nright, self.nwrong = 0, 0, 0
+                    # make first flashcard of repetition
+                    self.vocab = self.vocabulary[self.k]
+                    self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
+                    self.l2.delete(0,'end')
+                    self.state = True
             else:
                 self.k+=1
                 self.vocab = self.vocabulary[self.k]
@@ -89,7 +103,7 @@ class Main():
         self.Frame = tk.LabelFrame(self.window, text="Translate Hindi to English", padx=4, pady=5)
         self.Frame.pack()
         root.geometry(f"{root.winfo_screenwidth()//12*5}x{root.winfo_screenheight()//5*2}")
-        # pick out words 
+        # pick out words
         self.vocabulary = generate_Hindi_to_English_vocabulary(self.choices, self.dictionary, self.randomize)
         self.vocab = self.vocabulary[self.k]
         # design enter button
