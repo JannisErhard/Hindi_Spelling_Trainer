@@ -1,3 +1,8 @@
+    label{tab:phrases}
+      सर्दी का मौसम   & winter season & sardee ka mausam     
+      गर्मी का मौसम   & summer season & garmee ka mausam     
+     घर पर  & at the house & ghar par     
+     से प्यार करते हैं  & to love someone & se pyaar karate hain     
     label{tab:pronouns}
      आप  & you & aap 
      उनका  & her & Unka 
@@ -136,6 +141,13 @@
      एक  & one & ek 
     label{tab:nouns_abstract}
          काम  & work & kam 
+    label{tab:nouns_clothing}
+                 छाता  & umbrella & chhaata 
+         पतलून  & trousers & pataloon 
+         कमीज  & shirt & kameej 
+         जूता  & shoe & joota 
+         जुर्राब  & sock & jurraab 
+             कपड़े  & clothes & kapade 
     label{tab:nouns_inanimate}
          कमरा  & room & kamara 
          बिस्तर  & bed & bistar 
@@ -175,6 +187,8 @@
          कबूतर  & pidgeon & kabuter 
          पक्षी  & bird & pepshi 
     label{tab:nouns_people}
+         पड़ोसी  & neighbour & padosee 
+         बच्चा  & child & batscha 
          लड़की  & girl & ladakee
          लड़का  & boy & ladakaa
          औरत  & woman & aurat
@@ -182,10 +196,17 @@
          दोस्त  & friend & dhost
          लोग  & people & log 
     label{tab:nouns_family}
-         बच्चा  & child & batscha 
+         रिश्ता  & relationship  & rishta
+         रिश्तेदार  & relative  & rishtedaar
+         पत्नी  & wife  & patnee
+         पति  & husband & pati
          परिवार  & family & parivar
-         दादा  & grandfather & dada
-         दादी  & grandmother & dadi ma
+         चाचा  & uncle & chaacha 
+         चाची  & aunt & chaachee 
+         नाना  & maternal grandfather & nana 
+         नानी   & maternal grandmother & nani 
+         दादा  & paternal grandfather & dada
+         दादी  & paternal grandmother & dadi
          पिता  & father & pitta
          माँ  & mother & mah
          बहन  & sister & behen
