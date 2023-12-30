@@ -34,6 +34,7 @@
      कौन  & who & kaun 
      कैसे  & how & kaise 
     label{tab:adverbs_temporal}
+ अगला  & next & agala    
  बाद  & after & baad    
  बाद में & later & baad mein  
  हमेशा & always & hamesha   
@@ -91,8 +92,11 @@
     label{tab:adjective_emotions}
      दुखी  & sad & dukhee 
      खुश  & happy & kush 
+    label{tab:adjective_tastes}
+    मीठा & sweet & meetha 
+    नमकीन & salty & namakeen 
     label{tab:doublemeanings}
-         खेल  & game, plays & khel 
+         खेल  & game/plays & khel 
     label{tab:verb_emotions}
         पसंद   & like & pasad
         चाहिए  & need, want & chaahie
@@ -112,7 +116,8 @@
          जागना  & wake up & jāgtā 
          सोना  & sleep & sona 
          खेलना  & play &  khlana 
-         करना  & work &  karana 
+         काम करना   & work &  kaam karana 
+         करना  & do &  karana 
          रहना  & stay &  rhana 
          खाना  & eat &  khana 
          पीना  & drink &  pina 
@@ -149,6 +154,9 @@
          जुर्राब  & sock & jurraab 
              कपड़े  & clothes & kapade 
     label{tab:nouns_inanimate}
+         चम्मच  & spoon & chammach 
+         चाकू  & knife & chakoo 
+         गिलास  & glass & gilaas 
          कमरा  & room & kamara 
          बिस्तर  & bed & bistar 
          छत  & roof & chat 
@@ -276,7 +284,10 @@
          नींबू  & lemon & nimboo 
          सेब  & apple & sehb 
          केला  & banana & kela 
-         फल  & fruits & Fhal  
+         फल  & fruit & Fhal  
+         तेल  & oil & tel 
+         चीनी  & sugar & cheenee 
+         नमक  & salt & namak 
          खाना  & food & khanaa 
     label{tab:postpositions}
      पास  & nearby/belonging & pas 
