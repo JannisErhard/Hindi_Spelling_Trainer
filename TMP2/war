@@ -90,6 +90,8 @@
     label{tab:adjective_any}
      खड़ा  & standing & khara 
     label{tab:adjective_emotions}
+     प्यासा  & thirsty & pyaasa 
+     भूखा  & hungry & bhookha 
      दुखी  & sad & dukhee 
      खुश  & happy & kush 
     label{tab:adjective_tastes}
@@ -217,6 +219,7 @@
          दादी  & paternal grandmother & dadi
          पिता  & father & pitta
          माँ  & mother & mah
+         पोता  & grandchild & pota
          बहन  & sister & behen
          भाई  & brother & bhai
          बेटी  & daughter & beti
