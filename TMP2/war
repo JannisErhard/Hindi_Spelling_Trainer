@@ -1,4 +1,5 @@
     label{tab:phrases}
+      हवा चल रही है   & wind is blowing & hava chal rahee hai     
       सर्दी का मौसम   & winter season & sardee ka mausam     
       गर्मी का मौसम   & summer season & garmee ka mausam     
      घर पर  & at the house & ghar par     
@@ -148,6 +149,13 @@
      एक  & one & ek 
     label{tab:nouns_abstract}
          काम  & work & kam 
+    label{tab:nouns_aerial}
+             हवा   & work & hava 
+             बादल   & work & baadal 
+             चाँद   & work & chaand 
+             सूरज   & work & sooraj 
+             तारा   & work & taara 
+             आसमान   & work & aasamaan 
     label{tab:nouns_clothing}
                  छाता  & umbrella & chhaata 
          पतलून  & trousers & pataloon 
