@@ -23,7 +23,7 @@ class Main():
         self.start_menue()
     
     def press(self, value):
-        # only way to carry variables over
+        # remove or insert characters into l2
         length=len(self.l2.get())
         if (value=='Erase'):
             self.l2.delete(length-1,length)
@@ -32,6 +32,10 @@ class Main():
             self.l2.insert(length,' ')
         else:
             self.l2.insert(length,value)
+    
+    def interface_Enter(self, _):
+        # bind passes the event to the function, to be able to use the enter key as intended, this interface is required
+        self.Enter()
 
     def Enter(self):
         if self.state:
@@ -60,11 +64,13 @@ class Main():
                     self.vocab = self.vocabulary[self.k]
                     self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
                     self.l2.delete(0,'end')
+                    self.l2.bind('<Return>', self.interface_Enter)
                     self.state = True
             else:
                 self.k+=1
                 self.vocab = self.vocabulary[self.k]
                 self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
+                self.l2.bind('<Return>', self.interface_Enter)
                 self.l2.delete(0,'end')
                 self.state = True
     
@@ -111,6 +117,7 @@ class Main():
         enter_button.grid(row=3,column=0,sticky="NESW")
         # design of flashcard
         self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
+        self.l2.bind('<Return>', self.interface_Enter)
 
 
     def english_to_hindi(self):
@@ -132,6 +139,7 @@ class Main():
         enter_button.grid(row=5,column=12,sticky="NESW")
         # make flashcard
         self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
+        self.l2.bind('<Return>', self.interface_Enter)
     
 
 
