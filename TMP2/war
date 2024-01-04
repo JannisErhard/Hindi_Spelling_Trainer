@@ -112,6 +112,9 @@
       जाना  & go & ja, jaata 
       बैठना   & sit & beth 
     label{tab:verbs_communication}
+         सुनना  & hear & sunana	 
+         रोना  & cry & rona 
+         हँसना  & laugh & hansana 
          पूछना  & ask & poochna 
          बोलना  & speak & bolna 
          बातना  & talk & batna 
@@ -149,13 +152,23 @@
      एक  & one & ek 
     label{tab:nouns_abstract}
          काम  & work & kam 
+    label{tab:nouns_nature}
+             पर्वत   & mountain & parvat 
+             तालाब   & pond & taalaab 
+             आग   & fire & aag 
+    label{tab:nouns_vegetation}
+             फूल   & flower & phool 
+             पत्ते   & leave & patte 
+             खुशबू   & fragrance & khushaboo 
+             पौधा   & plant & paudha 
+             पेड़   & tree & ped 
     label{tab:nouns_aerial}
-             हवा   & work & hava 
-             बादल   & work & baadal 
-             चाँद   & work & chaand 
-             सूरज   & work & sooraj 
-             तारा   & work & taara 
-             आसमान   & work & aasamaan 
+             हवा   & air & hava 
+             बादल   & cloud & baadal 
+             चाँद   & moon & chaand 
+             सूरज   & sun & sooraj 
+             तारा   & star & taara 
+             आसमान   & sky & aasamaan 
     label{tab:nouns_clothing}
                  छाता  & umbrella & chhaata 
          पतलून  & trousers & pataloon 
@@ -205,6 +218,8 @@
          कबूतर  & pidgeon & kabuter 
          पक्षी  & bird & pepshi 
     label{tab:nouns_people}
+         मांसाहारी  & non-vegetarian & maansaahaaree 
+         शाकाहारी  & vegetarian & shaakaahaaree 
          पड़ोसी  & neighbour & padosee 
          बच्चा  & child & batscha 
          लड़की  & girl & ladakee

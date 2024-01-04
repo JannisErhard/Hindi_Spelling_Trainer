@@ -11,5 +11,5 @@ run:\
 `python3 Main.py`
 
 ## Plans
-Collect and do something with the wrong answers
 build a hook for the enter key
+fix the randomsation option
