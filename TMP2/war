@@ -5,6 +5,8 @@
      घर पर  & at the house & ghar par     
      से प्यार करते हैं  & to love someone & se pyaar karate hain     
     label{tab:pronouns}
+     दोनों  & both & donon 
+     दोनों  & both & donon 
      आप  & you & aap 
      उनका  & her & Unka 
      उनके  & their & unke 
@@ -35,6 +37,8 @@
      कौन  & who & kaun 
      कैसे  & how & kaise 
     label{tab:adverbs_temporal}
+ क्योंकि  & because & kyonki    
+ शायद  & maybe & shaayad    
  अगला  & next & agala    
  बाद  & after & baad    
  बाद में & later & baad mein  
@@ -48,6 +52,9 @@
  से  & since & se   
  सुबह  & in the morning & subbah   
  बजे  & o'clock & baje   
+    label{tab:conjunctions}
+  इसलिए  & so & isalie   
+ लेकिन  & but & lekin   
     label{tab:adjectives_temporal}
          पौने  & quarter to  & paune 
          सवा  & quarter past  & sava 
