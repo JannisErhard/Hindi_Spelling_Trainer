@@ -18,7 +18,7 @@ class Main():
         self.Frame=tk.LabelFrame(self.window, text="")
         self.k, self.nright, self.nwrong = 0, 0, 0
         self.state = True
-        self.randomize = True
+        self.randomize = tk.BooleanVar()
         self.mistakes = []
         self.start_menue()
     
@@ -103,7 +103,6 @@ class Main():
 
 
     def hindi_to_english(self):
-        print(self.randomize)
         # overhead
         self.Frame.destroy()
         self.Frame = tk.LabelFrame(self.window, text="Translate Hindi to English", padx=4, pady=5)
