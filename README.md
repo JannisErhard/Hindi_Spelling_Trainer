@@ -11,7 +11,7 @@ run:\
 `python3 Main.py`
 
 ## Plans
-re-think the enter key hook -> this is boileplate code that should be written only once. problem enter invisible to flashcard function\\
-introduce a progression system that also allows the addition of new vocabulary\\
-allow for alternative answers \\
+re-think the enter key hook -> this is boileplate code that should be written only once. problem enter invisible to flashcard function\
+introduce a progression system that also allows the addition of new vocabulary\
+allow for alternative answers\
 introduce declenation exercises
