@@ -65,6 +65,7 @@ class Main():
                     self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
                     self.l2.delete(0,'end')
                     self.l2.bind('<Return>', self.interface_Enter)
+                    self.l2.focus()
                     self.state = True
             else:
                 self.k+=1
@@ -72,6 +73,7 @@ class Main():
                 self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
                 self.l2.bind('<Return>', self.interface_Enter)
                 self.l2.delete(0,'end')
+                self.l2.focus()
                 self.state = True
     
     def start_menue(self):
@@ -117,6 +119,7 @@ class Main():
         # design of flashcard
         self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
         self.l2.bind('<Return>', self.interface_Enter)
+        self.l2.focus()
 
 
     def english_to_hindi(self):
@@ -139,6 +142,7 @@ class Main():
         # make flashcard
         self.l2 = flashcard(self.Frame, self.nright, self.nwrong, self.vocab, grade)
         self.l2.bind('<Return>', self.interface_Enter)
+        self.l2.focus()
     
 
 
