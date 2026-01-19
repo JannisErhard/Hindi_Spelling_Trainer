@@ -39,14 +39,14 @@ class Main():
 
     def Enter(self):
         if self.state:
-            if self.l2.get() == self.vocab[1]:
+            if self.l2.get() in self.vocab[1]:
                 self.nright+=1
                 tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13,pady=3)
                 tk.Label(self.Frame,text='Correct',fg='green', font=('Times', 24), height=2).grid(row=2,column=0,columnspan=13,pady=3)
             else :
                 self.nwrong+=1
                 tk.Label(self.Frame,text=' '*80,fg='red', font=('Times', 24)).grid(row=2,column=0,columnspan=13)
-                tk.Label(self.Frame,text='Incorrect. Proper Solution: '+self.vocab[1],fg='red', font=('Times', 24), height=2).grid(row=2,column=0,columnspan=13)
+                tk.Label(self.Frame,text='Incorrect. Proper Solution: '+self.vocab[1][0],fg='red', font=('Times', 24), height=2).grid(row=2,column=0,columnspan=13)
                 self.mistakes.append(self.vocab)
             self.state = False
         else:

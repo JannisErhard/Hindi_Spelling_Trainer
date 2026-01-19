@@ -29,7 +29,8 @@ def generate_English_to_Hindi_vocabulary(vocabulary_choices, unserialized_data, 
     for decision in vocabulary_choices.keys():
         if vocabulary_choices[decision].get():
             for item in unserialized_data[decision][0:]:
-                vocabulary.append([item[1], item[0]])
+                for alternative in item[1]:
+                    vocabulary.append([alternative, item[0]])
     if randomize.get():
         random.shuffle(vocabulary)
     return vocabulary 
@@ -40,7 +41,8 @@ def generate_Hindi_to_English_vocabulary(vocabulary_choices, unserialized_data, 
     for decision in vocabulary_choices.keys():
         if vocabulary_choices[decision].get():
             for item in unserialized_data[decision][0:]:
-                vocabulary.append([item[0], item[1]])
+                for alternative in item[0]:
+                    vocabulary.append([alternative, item[1]])
     if randomize.get():
         random.shuffle(vocabulary)
     return vocabulary

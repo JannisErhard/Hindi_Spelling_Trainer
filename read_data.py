@@ -4,5 +4,4 @@ def read_dictionary():
         dictionary = pickle.load(handle)
         dictionary = dict(sorted(dictionary.items()))
 
-
     return dictionary
