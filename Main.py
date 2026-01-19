@@ -77,31 +77,38 @@ class Main():
                 self.state = True
     
     def start_menue(self):
-        # overhead 
         self.Frame.destroy()
         self.Frame = tk.LabelFrame(self.window, text="Choose Vocabulary", padx=4, pady=5)
-        self.Frame.pack()
-        root.geometry("400x400")
-
+        self.Frame.pack(fill="both", expand=True)  # Make Frame expand to fill window
+        
+        # Set initial window size
+        # root.geometry("400x400")
+        
+        # Configure grid weights to make widgets expand
+        self.Frame.grid_rowconfigure(0, weight=1)  # Make row 0 expandable (ScrolledText)
+        self.Frame.grid_columnconfigure(0, weight=1)  # Make column 0 expandable
+        self.Frame.grid_columnconfigure(1, weight=1)  # Make column 1 expandable
+        
         # generate ... menue # self.Frame
         scroll_text = ScrolledText(self.Frame, width=20, height=10)
         checkboxes, self.choices = generate_checkboxes(self.dictionary, scroll_text)
-        scroll_text.grid(row=0,sticky="NESW")
-       
+        scroll_text.grid(row=0, column=0, columnspan=2, sticky="nsew", padx=5, pady=5)  # Make text widget expand
+        
         # set up buttons
-        button_deselect = tk.Button(self.Frame, text="Deselect All", command =lambda *args: deselect_all(checkboxes))
-        button_deselect.grid(row=1,column=0,sticky="NESW")
-
-        button_select = tk.Button(self.Frame, text="Select All", command =lambda *args: select_all(checkboxes))
-        button_select.grid(row=1,column=1,sticky="NESW")
-
-        button_start_english_to_hindi = tk.Button(self.Frame, text="Translate English to Hindi", command = self.english_to_hindi)
-        button_start_english_to_hindi.grid(row=2,column=0,sticky="NESW")
-
-        button_start_hindi_to_english = tk.Button(self.Frame, text="Translate Hindi to English", command = self.hindi_to_english)
-        button_start_hindi_to_english.grid(row=2,column=1,sticky="NESW")
-
+        button_deselect = tk.Button(self.Frame, text="Deselect All", 
+                                    command=lambda *args: deselect_all(checkboxes))
+        button_deselect.grid(row=1, column=0, sticky="nsew", padx=5, pady=5)
+        button_select = tk.Button(self.Frame, text="Select All", 
+                                  command=lambda *args: select_all(checkboxes))
+        button_select.grid(row=1, column=1, sticky="nsew", padx=5, pady=5)
+        button_start_english_to_hindi = tk.Button(self.Frame, text="Translate English to Hindi", 
+                                                  command=self.english_to_hindi)
+        button_start_english_to_hindi.grid(row=2, column=0, sticky="nsew", padx=5, pady=5)
+        button_start_hindi_to_english = tk.Button(self.Frame, text="Translate Hindi to English", 
+                                                  command=self.hindi_to_english)
+        button_start_hindi_to_english.grid(row=2, column=1, sticky="nsew", padx=5, pady=5)
         tk.Checkbutton(self.Frame, text="randomize", variable = self.randomize, onvalue=True, offvalue=False).grid(row=3,column=0,sticky='NEWS')
+ 
 
 
     def hindi_to_english(self):
